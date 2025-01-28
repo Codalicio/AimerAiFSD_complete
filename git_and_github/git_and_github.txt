@@ -1,0 +1,172 @@
+TOPIC : GIT AND GITHUB
+
+1.) Introduction to Version Control System and Git :
+
+Question) - How will you maintain different versions of a file?
+Answer) - Create a copy of the file and make changes to the new file created!
+
+Question) - What is a version?
+Answer) - A version is a instance of a project at a specific point of time.
+
+Question) - Why do we need to maintain the version?
+Answer) - If a need arises, we can easily propagate between versions and this can only be achieved if we maintained and kept track of the changes/versions in the first place.
+
+Question) - What are the challenges or issues with the Manual Version Control?
+Answer) - Issues/challenges with Manual Version Control :
+* It will be difficult to identify the changes between two files.
+* Not efficient with Projects having thousands of files.
+* Difficult to collaborate with the Team and other programmers.
+* Difficult to store metadata, such as who made what changes, date and the reason.
+Thus, it is quite difficult to maintain file versions manually and this is where the Version Control System comes to the rescue.
+For Example - Basic Version Control System is available on Google Drive also.
+
+Question) - What is Version Control System(VCS)?
+Answer) - Version Control System(VCS) is a tool/software that helps us in managing the code better like the changes made to a specific directory or a Project over the course of time. Version Control System(VCS) are sometimes known as SCM(Source Code Management) tools or RCS(Revision Control System).
+And one of the most used VCS tool today is called Git.
+
+Question) - What are the advantages of using a Version Control System(VCS)?
+Answer) -
+Following can be considered as the advantages of using a Version Control System(VCS) :
+* One can maintain and track all the changes/modifications done between different versions of a file and can also store the metadata for all the individual changes for better reference.
+* You can make a remote copy of the Project and if some file or folders got deleted or lost from the local, then we can get it from the remote server, and also we can download the entire Project from the remote to our local machine as well.
+* It helps in making it easy to create backups and revert changes whenever needed.
+* And we can easily collaborate with other developers, programmers, team members and peers efficiently.
+* It also makes sharing code on multiple systems, with multiple users easy.
+* It is highly efficient for large Project with thousands of files.
+
+Question) - What is a Local Git Repository?
+Answer) - The Repository created/initialized on our local machine is said to be a Local Git Repository.
+
+Question) - What is a Central Git Repository?
+Answer) - We can upload our Local Git Repository to a server, which includes all the versions of the code. Such a repository is called a Remote Git Repository, which is also known as a Central Repository.
+
+
+COLLABORATIONS :
+
+* Central Git Repository/Remote Git Repository is created by uploading our Local Git Repository to a remote server like "Github" constituting all the versions of the code.
+* Collaborators can download this Remote Git Repository as their Local Git Repo.
+* They can make changes to their Local Git Repo and add new versions.
+* They can also update the Remote Git Repo by pushing the newly added versions to the Remote Git Repo.
+* Other collaborators can download and update their Local copies with the new changes.
+
+
+Question) - What is a push operation?
+Answer) - When code from Local Git Repo is sent to a Remote server or Remote Repo, this operation is called a push.
+
+Question) - What is a pull operation?
+Answer) - When code from Remote server or Remote Repo is fetched backed in one's Local Git Repo, this operation is called as pull.
+
+
+Some KEYWORDS related to VERSION CONTROL SYSTEM(VCS) :
+
+*) REMOTE / CENTRAL / MASTER REPOSITORY :
+- A Repository hosted on a server/cloud service like "GitHub", "Bitbucket", etc., where we can store the main codebase.
+
+*) LOCAL GIT REPOSITORY :
+- A Local Repository where we store all the changes before pushing to the Remote Repository.
+
+*) Pushing : 
+- Pushing the changes made locally to Remote Repo.
+
+*) Pulling :
+- Pulling the current state of a Project including all the updates/changes from a Remote Repository.
+
+*) Master / Main :
+- Main branch in which all the deployable changes are stored.
+
+*) Head :
+- Pointer to the current branch or state of the code.
+
+Question) - What is Git and why we should use Git?
+Answer) - 
+Git is one of the most popular amongst VCS's.
+As of 2025, the most popular version control systems with significant market share are likely to be: Git (dominant market share), GitHub, GitLab, Bitbucket, AWS CodeCommit, with smaller shares held by Subversion (SVN), Perforce, and Helix Core; with Git widely considered the leading option due to its open-source nature, ease of use, and distributed version control capabilities.
+
+Key points about these systems:
+
+• Git: The most widely used version control system, offering a distributed approach with excellent performance for both small and large projects.
+
+• GitHub: A popular hosting platform for Git repositories, providing features like collaborative coding, project management, and issue tracking.
+
+• GitLab: Another popular Git hosting platform with integrated CI/CD capabilities and robust project management features.
+
+• Bitbucket: Primarily used within the Atlassian ecosystem, integrating with tools like Jira for project management.
+
+• AWS CodeCommit: A fully managed Git service offered by Amazon Web Services, allowing for secure private repositories within the AWS cloud.
+
+• Subversion (SVN): A centralized version control system, still used by some organizations due to its familiarity, but considered less flexible than Git.
+
+• Perforce: A commercial version control system often used by large enterprises for managing complex projects with many files and users.
+
+• Helix Core: A powerful system favored by companies in industries like gaming and semiconductors due to its scalability and advanced features.
+
+*Note : Oracle does not uses Git.
+
+
+2.) Starting with Git :
+
+* Creator of Git and Linux are the same person(Linus Torvalds).
+* Git was created by Linus Torvalds, who was also the creator of Linux.
+
+Benefits of using Git :
+
+* Its faster as most of the operations are performed locally.
+* It enables flexible version control.
+* It is quite easy to revert changes and move to the previous state seamlessly when using Git.
+* It's useful for distributed teams, i.e.geographically.
+* It maintains integrity while using hash values.
+
+Git Vs GitHub : 
+
+Question) - Are Git and GitHub the same?
+Answer) - No.
+
+* Git :
+- It is an open-source Version Control tool that is used by programmers for controlling versions of their codebase and collaborate with others. We can install our own Git server on our server. Most cloud providers also provide the same. It is more like using commands.
+
+* GitHub :
+- It is the most common online Git service where we can create Remote Repositories based on Git. It is more like using a website. In GitHub, we use the GitHub's UI to use Git.
+
+Alternatives to GitHub:
+* BitBucket
+* GitLab
+* SourceForge
+* Most cloud providers
+
+GitBash Commands :
+
+* pwd - It fetch and gives us the 'Present Working Directory(pwd).
+
+* cd - Change Directory to 'navigate around folders and files"
+
+* cd .. - To return to the previous directory.
+
+* ls - Gives us the content of the current selected directory, i.e., the names of the files and folders inside that respective directory.
+
+Git Commands :
+
+* git - Checks whether Git is installed on our local machine or not, if already installed, then will give all the other commands related to Git.
+
+* git -v or git --version - To check the version of the Git installed.
+
+* clear - Clears the Terminal.
+
+* git config user.name - To check the username associated with the Git currently.
+
+* git config --global user.name "Enter your username" - For changing the username and providing the context as 'global' to the Git.
+
+* git config user.email - To check the email id associated with the Git currently.
+
+* git config --global user.email "Enter your email id" - For changing the email id and providing the context as 'global' to the Git.
+
+* git init - To initialize a Local Git Repository, so that Git can perform Version Control for that particular project/folder and it should be run only once.
+
+
+
+
+3.) Making changes to the Local Repository :
+
+4.) Branching in Git :
+
+5.) Syncing with the Central Repository :
+
