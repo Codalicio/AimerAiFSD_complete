@@ -222,6 +222,10 @@ Git Commands :
 
 * git clone "url" - To clone a Remote Git Repository using/specifying the web URL for that remote repo.
 
+* git branch -a - Shows all the branches present at the moment in the Remote Repo.
+
+
+
 
 3.) Making changes to the Local Repository :
 
@@ -285,8 +289,52 @@ Branch can be created at a specific commit or instance as a copy of the master c
 
 Commonly used commands :
 
+* git branch - To check all the available branches.
+- The (*)symbol before a branch name shows the 'active branch'.
 
+* git branch "branch name" - Creates a new branch specified with the name.
+
+* git branch -d "branch name" - Deletes a branch specified with the name.
+
+* git checkout "branch name" - To navigate to a branch specified with the name.
+
+* git checkout -b "branch name" - To create and navigate to a new branch respectively at the same time. It uses two Git commands one after the other, i.e., (git branch "branch name") and then (git checkout "branch name").
+
+* git checkout "commit ID" - Creates and navigates to a new temporary branch with Head detached.
+
+* git switch -c "new branch name" - To give a name to a temporary branch with Head detached, that was created using a "commit ID" in the first place.
+
+* (git switch -) - The branch will switch to its parent branch(the branch out of which it was created). (This command is not recommended as it does not falls under the 'best practice").
+
+* git merge "branch name" - This will merge the branch specified with the branch in which this command is run.
+
+* git merge --abort - To abort the merge.
+
+* git log --merge - Logs the commits that let to a "Merge Conflict" at the first place.
 
 
 5.) Syncing with the Central Repository :
+
+Steps to connect our Local Repo to a Remote Repo(GitHub.com) :
+1. git branch -M master/main
+2. git remote add origin "url"
+3. git push -u origin master/main
+
+Common commands :
+
+* git clone "url" - To clone a Remote Git Repository using/specifying the web URL for that remote repo.
+
+* git branch -a - Shows all the branches present at the moment in the Remote Repo.
+
+* git pull - 
+
+Common facts :
+
+- If a repo from remote server is cloned onto local, then Git will already be initialized and it will be pre-ready for Version Control.
+
+- All the branches of Remote Repo are not reflected inside the cloned Local Repo, in order to view those hidden branches run the command : git branch -a in your terminal/GitBash.
+
+- All the commits made in Local Repo before connecting it to the Remote Repo will be preserved and will reflect in the Remote Repo after the connection.
+
+- When we fetch commits/changes/version from the Remote Repo, we use the command : git pull, 
 
