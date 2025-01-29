@@ -366,3 +366,6 @@ Question) - What is the difference between git pull and git rebase commands?
 Answer) - git pull creates a merge commit when we fetch the changes from the Remote Repo to our Local Repo. 
 But, if we want to fetch the changes without a merge commit, then we run git fetch to retrieve the change from the Remote Repo and after that we run git rebase origin master to rebase or reflect those changes to our Local Git Repository. And thus, it logs a clean commit history.
 
+---------------------------------------------------------------------------------------------------------
+
+
