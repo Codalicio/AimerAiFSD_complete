@@ -141,6 +141,10 @@ GitBash Commands :
 
 * cd .. - To return to the previous directory.
 
+* mkdir "folder/directory name" - To create a new folder or directory.
+
+* touch "file name with extension" - To create a new file.
+
 * ls - Gives us the content of the current working directory, i.e., the names of the files and folders inside that respective directory.
 
 * cat "file name" - Gives out the content of a file inside the terminal/GitBash(read-only).
