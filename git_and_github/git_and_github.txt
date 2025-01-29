@@ -141,9 +141,13 @@ GitBash Commands :
 
 * cd .. - To return to the previous directory.
 
-* ls - Gives us the content of the current selected directory, i.e., the names of the files and folders inside that respective directory.
+* ls - Gives us the content of the current working directory, i.e., the names of the files and folders inside that respective directory.
 
-Git Commands :
+* cat "file name" - Gives out the content of a file inside the terminal/GitBash(read-only).
+
+* ls -a - It shows all the hidden folders and files inside the present working directory.
+
+* q - To quit/get-out of the pagers like "git log - pager". 
 
 * git - Checks whether Git is installed on our local machine or not, if already installed, then will give all the other commands related to Git.
 
@@ -159,14 +163,122 @@ Git Commands :
 
 * git config --global user.email "Enter your email id" - For changing the email id and providing the context as 'global' to the Git.
 
-* git init - To initialize a Local Git Repository, so that Git can perform Version Control for that particular project/folder and it should be run only once.
+VI Text Editor Commands(should be run in the GitBash) :
 
+* vi "file name" - Creates a file and opens it in a vi file editor.
 
+* i - To insert anything into the file running the vi editor.
+
+* Esc, :wq! - That means write and quit, which saves the file and also closes the vi text editor.
+
+Git Commands :
+
+* git init - To initialize a Local Git Repository, so that Git can perform Version Control for that particular project/folder and it should be run only once. After the initialization completes, one .git file gets created automatically called as (GIT DIR) or Git Directory.
+
+* git status - Command to check the status of the "Git" VCS.
+
+* git add "file name" - To add an untracked/unstaged file to the tracked/staged context(state).
+
+* git rm --cached "file name" - To unstage/untrack a file that is already staged/tracked.
+
+* git add . - To add all the files available in the untracked/unstaged context/area/state to the staging context(tracked state) all at once!
+
+* git restore --staged . - To unstage/untrack all the files at once!
+
+* git commit -m "commit message/description" - To commit or add commit messages/descriptions to the files that are in the staging area. This commands also helps in creating all the metadata regarding the commit, that can be referenced anytime and serve as a version of the project.
+
+* git log - It will give the information about all the commits made till now.
+
+* git log -n "no. of commits required" - Logs the number of commits specified (latest) only.
+
+* git log --committer="user name" - Logs all the commits done by the person with the specified username.
+
+* git log -n "no.of commits required" --committer="user name" - Logs the numbers of commits specified, by the person with the specified username.
+
+* git show "commit ID" - Shows all the metadata regarding a particular commit Id including the changes made.
+
+* git branch - To check all the available branches.
+- The (*)symbol before a branch name shows the 'active branch'.
+
+* git branch "branch name" - Creates a new branch specified with the name.
+
+* git branch -d "branch name" - Deletes a branch specified with the name.
+
+* git checkout "branch name" - To navigate to a branch specified with the name.
+
+* git checkout -b "branch name" - To create and navigate to a new branch respectively at the same time. It uses two Git commands one after the other, i.e., (git branch "branch name") and then (git checkout "branch name").
+
+* git checkout "commit ID" - Creates and navigates to a new temporary branch with Head detached.
+
+* git switch -c "new branch name" - To give a name to a temporary branch with Head detached, that was created using a "commit ID" in the first place.
+
+* (git switch -) - The branch will switch to its parent branch(the branch out of which it was created). (This command is not recommended as it does not falls under the 'best practice").
 
 
 3.) Making changes to the Local Repository :
 
+Stages of Git :
+
+Stage 1 :
+- Untracked or Unstaged : The stage where the files are not added to the staging area for the Git to track changes/versions.
+
+Stage 2 :
+- Tracked or Staged : The stage where the files are staged for tracking or performing version control.
+
+Stage 3 :
+- commit stage : The stage where the file is observed/tracked by the Git and we just need to commit the changes by providing a commit message to it. Commit message is mainly written as a "Giving instruction in Present Tense with authoritative tone".
+
+Commonly used commands :
+
+* git init - To initialize a Local Git Repository, so that Git can perform Version Control for that particular project/folder and it should be run only once. After the initialization completes, one .git file gets created automatically called as (GIT DIR) or Git Directory.
+
+* git status - Command to check the status of the "Git" VCS.
+
+* git add "file name" "file name"(optional) - To add an untracked/unstaged file to the tracked/staged context(state).
+
+* git rm --cached "file name" "file name"(optional) - To unstage/untrack a file that is already staged/tracked.
+
+* git add . - To add all the files available in the untracked/unstaged context/area/state to the staging context(tracked state) all at once!
+
+* git restore --staged . - To unstage/untrack all the files at once!
+
+* git commit -m "commit message/description" - To commit or add commit messages/descriptions to the files that are in the staging area. This commands also helps in creating all the metadata regarding the commit, that can be referenced anytime and serve as a version of the project.
+
+* git log - It will give the information about all the commits made till now.
+
+* git log -n "no. of commits required" - Logs the number of commits specified (latest) only.
+
+* git log --committer="user name" - Logs all the commits done by the person with the specified username.
+
+* git log -n "no.of commits required" --committer="user name" - Logs the numbers of commits specified, by the person with the specified username.
+
+* git show "commit ID" - Shows all the metadata regarding a particular commit Id including the changes made.
+
+
 4.) Branching in Git :
+
+Question) - Why do we need branching in Git?
+Answer) - We can understand the need of branching in Git by observing a scenario, like :
+* Scenario : Consider, you have a running live website, and you want to add some new features to it. For this we can apply an approach:
+* Approach 1 : Stop running the website and then make changes to the code in the master codebase.
+* Approach 2 : Make changes to the code in the master codebase of the running website.
+Note :
+But these two approaches are not appropriate as they can create hindrance in the website status. So, we need a way where the master codebase of the website remains untouched until we complete updating the code of the new feature.
+Hence, branching comes to the rescue in this intricate situation.
+Branch can be created at a specific commit or instance as a copy of the master codebase, then developers can work on specific code instances and develop features independent of the master codebase and later merge it with master codebase without hampering the running website.
+
+* Branch is a generally a copy of the master codebase, originating out of a specific commit or instance.
+
+* Concept of branch is present in nearly all the Version Control System out there.
+
+* When we first initialize git, it comes with a default branch named main or master.
+
+* Branch provides isolation from the master codebase, so individual contributors can work independently and these branches can be termed as 'feature branches'.
+
+Commonly used commands :
+
+
+
 
 5.) Syncing with the Central Repository :
 
