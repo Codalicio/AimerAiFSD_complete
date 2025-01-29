@@ -214,6 +214,8 @@ Git Commands :
 
 * (git switch -) - The branch will switch to its parent branch(the branch out of which it was created). (This command is not recommended as it does not falls under the 'best practice").
 
+* git merge "branch name" - This will merge the branch specified with the branch in which this command is run.
+
 
 3.) Making changes to the Local Repository :
 
