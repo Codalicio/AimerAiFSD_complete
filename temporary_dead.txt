@@ -1,1 +1,1 @@
-Delete, from branch1.
+Delete, from branch2.
