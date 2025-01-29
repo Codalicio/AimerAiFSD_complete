@@ -220,6 +220,8 @@ Git Commands :
 
 * git log --merge - Logs the commits that let to a "Merge Conflict" at the first place.
 
+* git clone "url" - To clone a Remote Git Repository using/specifying the web URL for that remote repo.
+
 
 3.) Making changes to the Local Repository :
 
