@@ -336,5 +336,7 @@ Common facts :
 
 - All the commits made in Local Repo before connecting it to the Remote Repo will be preserved and will reflect in the Remote Repo after the connection.
 
-- When we fetch commits/changes/version from the Remote Repo, we use the command : git pull, 
+- When we fetch commits/changes/version from the Remote Repo, we use the command : git pull, it executes a two step process to fetch the changes from the Remote Repo, namely : 1. git fetch and followed by 2. git merge. Thus, it creates a merge commit as a result of this command.
+
+
 
