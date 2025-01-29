@@ -216,6 +216,10 @@ Git Commands :
 
 * git merge "branch name" - This will merge the branch specified with the branch in which this command is run.
 
+* git merge --abort - To abort the merge.
+
+* git log --merge - Logs the commits that let to a "Merge Conflict" at the first place.
+
 
 3.) Making changes to the Local Repository :
 
