@@ -1,4 +1,8 @@
+-----------------------------------------------------------------------------------------------------
+
 TOPIC : GIT AND GITHUB
+
+-----------------------------------------------------------------------------------------------------
 
 1.) Introduction to Version Control System and Git :
 
@@ -12,7 +16,8 @@ Question) - Why do we need to maintain the version?
 Answer) - If a need arises, we can easily propagate between versions and this can only be achieved if we maintained and kept track of the changes/versions in the first place.
 
 Question) - What are the challenges or issues with the Manual Version Control?
-Answer) - Issues/challenges with Manual Version Control :
+Answer) - 
+Issues/challenges with Manual Version Control :
 * It will be difficult to identify the changes between two files.
 * Not efficient with Projects having thousands of files.
 * Difficult to collaborate with the Team and other programmers.
@@ -22,7 +27,7 @@ For Example - Basic Version Control System is available on Google Drive also.
 
 Question) - What is Version Control System(VCS)?
 Answer) - Version Control System(VCS) is a tool/software that helps us in managing the code better like the changes made to a specific directory or a Project over the course of time. Version Control System(VCS) are sometimes known as SCM(Source Code Management) tools or RCS(Revision Control System).
-And one of the most used VCS tool today is called Git.
+And one of the most used VCS tool today is Git.
 
 Question) - What are the advantages of using a Version Control System(VCS)?
 Answer) -
@@ -39,9 +44,9 @@ Answer) - The Repository created/initialized on our local machine is said to be 
 
 Question) - What is a Central Git Repository?
 Answer) - We can upload our Local Git Repository to a server, which includes all the versions of the code. Such a repository is called a Remote Git Repository, which is also known as a Central Repository.
+And it can also be created on the Web UI of the Remote server.
 
-
-COLLABORATIONS :
+# COLLABORATIONS :
 
 * Central Git Repository/Remote Git Repository is created by uploading our Local Git Repository to a remote server like "Github" constituting all the versions of the code.
 * Collaborators can download this Remote Git Repository as their Local Git Repo.
@@ -56,14 +61,15 @@ Answer) - When code from Local Git Repo is sent to a Remote server or Remote Rep
 Question) - What is a pull operation?
 Answer) - When code from Remote server or Remote Repo is fetched backed in one's Local Git Repo, this operation is called as pull.
 
+--------------------------------------------------------------------------------------------------------
 
-Some KEYWORDS related to VERSION CONTROL SYSTEM(VCS) :
+# Some KEYWORDS related to VERSION CONTROL SYSTEM(VCS) :
 
 *) REMOTE / CENTRAL / MASTER REPOSITORY :
 - A Repository hosted on a server/cloud service like "GitHub", "Bitbucket", etc., where we can store the main codebase.
 
 *) LOCAL GIT REPOSITORY :
-- A Local Repository where we store all the changes before pushing to the Remote Repository.
+- A Local Repository is where we store all the changes before pushing to the Remote Repository.
 
 *) Pushing : 
 - Pushing the changes made locally to Remote Repo.
@@ -76,6 +82,8 @@ Some KEYWORDS related to VERSION CONTROL SYSTEM(VCS) :
 
 *) Head :
 - Pointer to the current branch or state of the code.
+
+---------------------------------------------------------------------------------------------------------
 
 Question) - What is Git and why we should use Git?
 Answer) - 
@@ -102,13 +110,15 @@ Key points about these Version Control  Systems:
 
 *Note : Oracle does not uses Git.
 
+----------------------------------------------------------------------------------------------------
+
 
 2.) Starting with Git :
 
 * Creator of Git and Linux are the same person(Linus Torvalds).
 * Git was created by Linus Torvalds, who was also the creator of Linux.
 
-Benefits of using Git :
+# Benefits of using Git :
 
 * Its faster as most of the operations are performed locally.
 * It enables flexible version control.
@@ -143,26 +153,30 @@ Answer) -
 3. Collaborating with the team
 4. Maintaining versions
 
-You can follow either of the options given below to start with Git :
+---------------------------------------------------------------------------------------------------
+
+# You can follow either of the options given below to start with Git :
 - You can turn the Local Directory that is not currently under version control into a Git Repository.
 OR,
 - You can "clone"(copy with all details) an existing Git Repository from any location or server such as GitHub and BitBucket.
 
-GitBash Commands :
+--------------------------------------------------------------------------------------------------------
+
+# GitBash Commands :
 
 * pwd - It fetch and gives us the 'Present Working Directory(pwd).
 
-* cd - Change Directory to 'navigate around folders and files"
+* cd - Change Directory to 'navigate around folders and files.
 
 * cd .. - To return to the previous directory.
 
 * mkdir "folder/directory name" - To create a new folder or directory.
 
-* touch "file name with extension" - To create a new file.
+* touch <file_name_with_extension> - To create a new file.
 
 * ls - Gives us the content of the current working directory, i.e., the names of the files and folders inside that respective directory.
 
-* cat "file name" - Gives out the content of a file inside the terminal/GitBash(read-only).
+* cat <file_name> - Gives out the content of a file inside the terminal/GitBash(read-only).
 
 * ls -a - It shows all the hidden folders and files inside the present working directory.
 
@@ -170,38 +184,43 @@ GitBash Commands :
 
 * git - Checks whether Git is installed on our local machine or not, if already installed, then will give all the other commands related to Git.
 
-* git -v or git --version - To check the version of the Git installed.
+* git -v or git --version :- To check the version of the Git installed.
 
 * clear - Clears the Terminal.
 
-* git config user.name - To check the username associated with the Git currently.
+* git config user.name - To check the username associated with the Git local currently.
 
-* git config --global user.name "Enter your username" - For changing the username and providing the context as 'global' to the Git.
+* git config --global user.name <Enter_your_username> - For changing the username and providing the context as 'global' to the Git local.
 
-* git config user.email - To check the email id associated with the Git currently.
+* git config user.email - To check the email id associated with the Git local currently.
 
-* git config --global user.email "Enter your email id" - For changing the email id and providing the context as 'global' to the Git.
+* git config --global user.email <Enter_your_email_id> - For changing the email id and providing the context as 'global' to the Git local.
 
-* rm -rf "file name" - Deletes/removes the specified file.
+* rm -rf <file_name> - Deletes/removes the file with the specified name.
 
 * rm -rf .git - Undo the git initialization by deleting the ".git" folder.
 
-VIM Text Editor Commands(should be run in the GitBash) :
+--------------------------------------------------------------------------------------------------
 
-* vi "file name" or vim "file name" - To create a new file and open, or to open an existing file to modify.
+# VIM Text Editor Commands(should be run in the GitBash) :
+
+* vi <file_name> or vim <file_name> - To create a new file and open, or to open an existing file to modify.
 
 * i - To start inserting or editing a file running in the vim editor.
 
-* Esc, :wq! - That means write and quit, which saves the file and also exits the VIM text editor/file.
+* Esc :wq! - That means write and quit, which saves the file and also exits the VIM text editor/file.
 
-* Get a complete list of cod(UNIX) commands at :- https://en.wikipedia.org/wiki/List_of_POSIX_commands
+Note :
+- Get a complete list of cod(UNIX) commands at :- https://en.wikipedia.org/wiki/List_of_POSIX_commands
 
-Git Commands :
+------------------------------------------------------------------------------------------------------
 
-* git init - To initialize a Local Git Repository, so that Git can perform Version Control for that particular project/folder and it should be run only once. After the initialization completes, one .git file gets created automatically called as (GIT DIR) or Git Directory.
+# Git Commands :
+
+* git init - To initialize a Local Git Repository, so that Git can perform Version Control for that particular project/folder and it should be run only once. After the initialization completes, one .git file gets created automatically called as Git Directory(GIT DIR).
 
 * git status - Command to check the status of the Working Tree and the Staging Area. Shows the status of all the Untracked and Tracked files(whether Staged or Unstaged).
-* git status -s :- In this short status command, each file is appended with a symbol the form of XY, where X shows the status of Staging Area and Y shows the status of the Working Tree.
+* git status -s :- In this short status command, each file is appended with a symbol in the form of XY, where X shows the status of Staging Area and Y shows the status of the Working Tree.
 Different Symbols :
 1.) "" - Unmodified
 2.) M - Modified
@@ -213,70 +232,105 @@ Different Combinations :
 Note :
 - You can see the complete list of symbols and combinations here - https://git-scm.com/docs/git-status
 
-* git add "file name" - This command is used to move the Unstaged files(both Tracked and Untracked) files from the Working Tree to the Staging Area. The files present in the Staging Area will be present in the next commit.
+* git add <file_name> - This command is used to move the Unstaged files(both Tracked and Untracked files) from the Working Tree to the Staging Area. The files present in the Staging Area will be present in the next commit.
 * git add . or git add --all :- To add all the Unstaged files(both Tracked and Untracked) from the Working Tree to the staging Area(Staging context), all at once!
 
-* git rm --cached "file name" - To unstage/untrack a file that is already staged/tracked.
+* git rm --cached <file_name> - To unstage/untrack a file that is already staged/tracked.
 
 * git restore --staged . - To unstage/untrack all the files at once!
 
-* git commit -m "commit message/description" - To commit or add commit messages/descriptions to the files that are in the staging area, it also moves Staged files from Staging Area to Git Directory and thus, saves all the changes in the Local Git Repo. This commands also helps in creating all the metadata regarding the commit, that can be referenced anytime and serve as a version of the project.
-* git commit -a -m "commit message/description" - Used to stage all the Tracked files and commit them with the given message.
+* git commit -m <commit_message/description> - To commit or add commit messages/descriptions to the files that are in the staging area, it also moves Staged files from Staging Area to Git Directory and thus, saves all the changes in the Local Git Repo. This command also helps in creating all the metadata regarding the commit, that can be referenced anytime and serve as a version of the project.
+
+* git commit -a -m <commit_message/description> - Used to stage all the Tracked files and commit them with the provided/specified message.
 Note :
 - This command lets you skip the step of executing "git add" command.
 
-* git log - It will give the information about all the commits made till now.
+* git push - Helps in pushing the changes and commits made in Local Git Repo to Remote server(Remote Git Repo).
 
-* git log -n "no. of commits required" - Logs the number of commits specified (latest) only.
+* git log, or git log --all :- It will give the information about all the previous commits happened. We can filter commits based on multiple properties such as "number of days", "author", "recent number of commits done".
 
-* git log --committer="user name" - Logs all the commits done by the person with the specified username.
+* git log -n <no._of_commits_required> - Show details of last n number of commits specified with the number(numerical value).
 
-* git log -n "no.of commits required" --committer="user name" - Logs the numbers of commits specified, by the person with the specified username.
+* git log --committer=<user_name> - Logs/shows all the commits made by the person with the specified username.
 
-* git show "commit ID" - Shows all the metadata regarding a particular commit Id including the changes made.
+* git log -n <no._of_commits_required> --committer=<user_name> - Logs the n numbers of commits specified with the number and, by the person specified with the username.
+
+* git log --oneline :- Shows details about each commit in one line.
+
+* git show <commit_id> - Shows all the metadata regarding a particular commit Id including the changes made.
 
 * git branch - To check all the available branches.
 - The (*)symbol before a branch name shows the 'active branch'.
 
-* git branch "branch name" - Creates a new branch specified with the name.
+* git branch <branch_name> - Creates a new branch specified with the name.
 
-* git branch -d "branch name" - Deletes a branch specified with the name.
+* git branch -d <branch_name> - Deletes a branch specified with the name.
 
-* git checkout "branch name" - To navigate to a branch specified with the name.
+* git branch -a :- Makes all the branches present at the moment in the Remote Repo visible in the Local Git Repo.
 
-* git checkout -b "branch name" - To create and navigate to a new branch respectively at the same time. It uses two Git commands one after the other, i.e., (git branch "branch name") and then (git checkout "branch name").
+Note :
+* git checkout :
+- Used to navigate between branches.
+- Used to create and simultaneously checkout the new branch.
+- Used to move to a previous version in the same branch. 
 
-* git checkout "commit ID" - Creates and navigates to a new temporary branch with Head detached.
+* git checkout <branch_name> - To navigate to a branch with the specified name.
 
-* git switch -c "new branch name" - To give a name to a temporary branch with Head detached, that was created using a "commit ID" in the first place.
+* git checkout -b <branch_name> - To create a new branch with the specified name and simultaneously checkout/navigate/move to the newly created branch. It uses two Git commands simultaneously, i.e., 1.(git branch <branch_name>) and then 2.(git checkout <branch_name>).
 
-* (git switch -) - The branch will switch to its parent branch(the branch out of which it was created). (This command is not recommended as it does not falls under the 'best practice").
+* git checkout <commit_id> - Used to checkout the code at the specified commit ID. It Creates and navigates to a new temporary branch with Head detached. Which can be given a name afterwards.
 
-* git merge "branch name" - This will merge the branch specified with the branch in which this command is run.
+* git switch -c <new_branch_name> - To give a name to a temporary branch with Head detached(branch checkedOut with a certain commit ID), that was created using a "commit ID" in the first place.
 
-* git merge --abort - To abort the merge.
+* (git switch -) :- The branch will switch to its parent branch(the branch out of which it was created). (This command is not recommended as it does not falls under the 'best practices").
 
-* git log --merge - Logs the commits that let to a "Merge Conflict" at the first place.
+* git merge <branch_name> - This will merge the branch specified with the branch(<branch_name>), to the branch on which the command got executed.
 
-* git clone "SSH OR HTTPS url" - To clone a Remote Git Repository using/specifying the web URL for that remote repo.
-Consequences of running "git clone" command :
-1. It creates a directory named same as Remote Repository inside the projects directory.
-2. It downloads the .git folder from the Remote Git Repository.
+Question) - What are Merge Conflicts in Git?
+Answer) - A merge conflict occurs when we merge two branches and Git is unable to automatically resolve the differences in code/files between that two branches.
+
+Question) - When does a merge conflict occur?
+Answer) - A merge conflict occurs when two different changes are made to the same line in the same file. For example, If one user deletes a line and another user modifies the same line on a different branch, then a merge conflict occurs.
+And later, when two branches having different changes on the same line are to be merged, merge conflict occurs.
+
+Question) - How to resolve Merge Conflicts?
+Answer) - Git displays Merge Conflict areas in the file between the conflict markers as shown below :
+ <<<<<<<<< HEAD
+ <Changes in the current branch>
+ =========
+ <Changes in the incoming branch>
+ >>>>>>>>> Branch Name
+ - We can resolve the conflict manually by editing the piece between the markers.
+ - We should also remove the markers added by Git.
+ - We can then commit the changes and, thus, it fixes the Merge Conflict.
+
+# Git commands are used to resolve Merge Conflicts :
+ - You can resolve merge conflicts by editing the file and removing conflicts, but some Git commands can help in a better way. These include the following :
+ * git status - Gives an idea of merge conflicts that have occurred.
+ * git log --merge :- Produces a log with all the commits that have caused conflicts during the merging of branches.
+ * git diff - Finds the differences between the states of a repository/files and thus, it can help us find and prevent Merge Conflicts.
+ * git checkout - Used to undo changes made to Unstaged files(Recall that this is also used for switching branches and commits).
+ * git reset - Used to undo changes made to the Working Directory and the Staging Area to the last stable commit. This basically works for the set of lines in the aforementioned areas unlike - "git checkout", which can even work on specified files.
+ * git merge --abort :- Used to exit from the merge process and return the branch to the state prior to the start of the merging process.
+
+* git merge --abort :- Used to exit from the merge process and return the branch to the state prior to the start of the merging process.
+
+* git diff - Finds the differences between the states of a repository/files and thus, it can help us find and prevent Merge Conflicts.
+
+* git log --merge :- Produces a log with all the commits that have caused conflicts during the merging of branches.
+
+-----------------------------------------------------------------------------------------------------
+
+* git clone - To copy/clone a Remote Git Repository to a Local Git Repository.
+
+* git clone <SSH_or_HTTPS_url> - Used to copy/clone a Repo from the provided Remote Repo, it will create a directory with the name of the Remote Repo.
+
+* git clone <SSH_or_HTTPS_url> <directory_name> - Used to clone a Repo from the provided Remote Repo and save it in a new directory with the name : <directory_name>.
+
+# Consequences of running "git clone" command :
+1. It creates a directory named similar/same/identical as Remote Repository inside the projects directory.
+2. It downloads the ".git" folder from the Remote Git Repository.
 3. It provides a working copy of the latest version of the Remote Git Repository.
-
-Steps to connect our Local Repo to a Remote Repo(GitHub.com) :
-1. git branch -M master/main
-2. git remote add origin "url"
-3. git push -u origin master/main
-
-Add a new remote to your Local Git Repository :
-* While creating a Git Repository, you need to add a remote/cloud-based repository for the following purposes :
-- To keep a copy of the source code available at any time or location.
-- To collaborate with team members and other programmers across multiple locations.
-* You can add a remote to your Git repository using the following command :
-- git clone <SSH or HTTPS url>
-Note : You can have multiple remote locations(remote repositories) added to our Local Git Repository.
-The above command adds a new remote location with the same 'origin' and connects to the given link of the Remote Repository.
 
 Question) - Which of the following commands will help you to download a new Git Repository from the remote?
 1. git init
@@ -287,174 +341,466 @@ Question) - Which of the following commands will help you to download a new Git 
 Answer) - 
 2. git clone
 
-* git remote -v : Checks whether the local is connected to remote or not and if so, then it gives the URL for "fetch" and "push".
+-----------------------------------------------------------------------------------------------------
 
-* git branch -a - Shows all the branches present at the moment in the Remote Repo.
+* git pull - To fetch all the changes/commits/version from the Remote Repo to the Local Git Repo, it executes a two step process to fetch the changes from the Remote Repo, namely : 1. "git fetch" and followed by 2. "git merge". Thus, it creates a merge commit as a result of this command.
 
-* git clone "url" - To clone a Remote Git Repository using/specifying the web URL for that remote repo.
+# To overcome this(Merge commit getting created) Consequences of "git pull" command, we use two commands one after the other instead, namely :
+- git fetch :- To fetch or download the changes from the Remote Repo to the Local Repo.
+And then followed by the command :
+- git rebase origin master/main :- To sync the origin/master of Remote Repo to the master/main of Local Repo.
+And thus, by these two above commands we can get read of "merge commits".
 
-* git branch -a - Shows all the branches present at the moment in the Remote Repo.
+# git pull :
+- Pulls updates from the given origin and master/main branch, and merges them with the current branch.
+* git pull <remote> <branch> - Pulls updates from the given Remote Repo and branch, and merges them with the current branch.
+* git pull <remote> - Pulls updates from the given Remote Repo and master/main branch, and merges them with the current branch.
+
+# git fetch :
+- Used to download all the changes from a Remote Repository to the Local Repository.
+- Also used to check all the updates in the Remote Repository.
+* git fetch <remote> - Fetches all the data from the provided Remote Repo link.
+* git fetch <remote> <branch_name> - Fetches all the data from the provided Remote Repo link and the specified branch.
+* git fetch --all :- Fetches all the data from all the Remote locations added in the Local Repository.
+
+# git fetch Vs git pull :
+- The "git pull" command is a combination of two other commands, "git fetch" followed by "git merge".
+* For example, suppose you are currently in the feature1 branch and execute "git pull origin feature2" command :
+- In the first stage of the operation, Git will execute "git fetch origin feature2" command and will download all the changes from the Remote Repository to the Local Repository corresponding to the feature2 branch.
+- Once the content is downloaded, Git will execute "git merge feature2" command and merge the feature2 branch with the current branch, which is feature1, if there is no merge conflict.
 
 * git pull - To fetch commits/changes/version from the Remote Repo, it executes a two step process to fetch the changes from the Remote Repo, namely : 1. git fetch and followed by 2. git merge. Thus, it creates a merge commit as a result of this command.
 To overcome this "Merge commit getting created", we use two commands one after the other, namely :
-- git fetch - To fetch the changes from the Remote Repo to the Local Repo.
+- git fetch - To fetch and download all the changes from the Remote Repo to the Local Repo.
 And then followed by the command :
 - git rebase origin master/main - To sync the origin/master of Remote Repo to the master/main of Local Repo.
 And thus, by these two above commands we can get read of "merge commits".
 
+------------------------------------------------------------------------------------------------------
+
+# Steps to connect our Local Repo to a Remote Repo(GitHub.com) :
+1. git branch -M master/main
+2. git remote add origin <url>
+3. git push -u origin master/main
+
+# Add a new remote to your Local Git Repository :
+
+* While creating a Git Repository, you need to add a remote/cloud-based repository for the following purposes :
+- To keep a copy of the source code available at any time or location.
+- To collaborate with team members and other programmers across multiple locations.
+
+* We can add a remote to your Git repository using the following command :
+- "git clone <SSH_or_HTTPS_url>" or "git clone <SSH_or_HTTPS_url> <directory_name>"
+Note : 
+- We can have multiple remote locations(remote repositories) added to our Local Git Repository.
+The above command adds a new remote location with the same 'origin' and connects to the given link of the Remote Repository.
+
+* git remote -v :- Checks whether the local is connected to remote or not and if so, then it gives the URL for "fetch" and "push".
+
+-----------------------------------------------------------------------------------------------------
 
 3.) Making changes to the Local Repository :
 
-To understand how Git works, you need to understand the three states/stages and areas of a Git Project :
-* Three(3) States :
+# To understand how Git works, you need to understand the three states/stages and areas of a Git Project :
+
+- Three(3) States :
 1.) Modified, Untracked
 2.) Staged
 3.) Committed
 
-Stages of Git :
-Stage 1 :
-- Untracked or Unstaged : The stage where the files are not added to the staging area for the Git to track changes/versions.
+# States of Git :
 
-Stage 2 :
-- Tracked or Staged : The stage where the files are staged for tracking or performing version control.
+* State 1 :
+- Untracked or Unstaged : The state where the files are not added to the staging area for the Git to track changes/versions.
 
-Stage 3 :
-- commit stage : The stage where the file is observed/tracked by the Git and we just need to commit the changes by providing a commit message to it. Commit message is mainly written as a "Giving instruction in Present Tense with authoritative tone".
+* State 2 :
+- Tracked or Staged : The state where the files are staged for tracking or performing version control.
 
-* Three(3) Areas :
+* State 3 :
+- commit stage : The state where the file is observed/tracked by the Git and we just need to commit the changes by providing a commit message to it. Commit message is mainly written as a "Giving instruction in Present Tense with authoritative tone".
+
+- Three(3) Areas :
 1.) The Working Tree
 2.) The Staging Area
 3.) The Git Directory
 
-The Git workflow :
+# The Git workflow :
 
 1.) When you add new files to the Local Git Repo, those files are called untracked files and reside in the Working Tree.
 
-2.) The files you want to save in the next version need to be moved from the Working Tree yto Staging Area. Such files are called staged files.
+2.) The files you want to save in the next version need to be moved from the Working Tree to Staging Area. Such files are called staged files.
 
 3.) You can save the staged files in the next version by moving them to the Git directory, they are moved back to the Working Tree and are called modified files.
 
-Commonly used commands :
+-----------------------------------------------------------------------------------------------------------------------------------
 
-* git init - To initialize a Local Git Repository, so that Git can perform Version Control for that particular project/folder and it should be run only once. After the initialization completes, one .git file gets created automatically called as (GIT DIR) or Git Directory.
+# Commonly used commands :
 
-* git status - Command to check the status of the "Git" VCS.
+* git init - To initialize a Local Git Repository, so that Git can perform Version Control for that particular project/folder and it should be run only once. After the initialization completes, one .git file gets created automatically called as Git Directory(GIT DIR).
 
-* git add "file name" "file name"(optional) - To add an untracked/unstaged file to the tracked/staged context(state).
+* git status - Command to check the status of the Working Tree and the Staging Area. Shows the status of all the Untracked and Tracked files(whether Staged or Unstaged).
+* git status -s :- In this short status command, each file is appended with a symbol in the form of XY, where X shows the status of Staging Area and Y shows the status of the Working Tree.
+Different Symbols :
+1.) "" - Unmodified
+2.) M - Modified
+3.) A - added
+4.) ?? - Untracked
+Different Combinations :
+* A - Added to the Staging Area and not Modified(Tracked + Staged).
+* AM - Added to the Staging Area but again Modified(Tracked + Unstaged).
+Note :
+- You can see the complete list of symbols and combinations here - https://git-scm.com/docs/git-status
 
-* git rm --cached "file name" "file name"(optional) - To unstage/untrack a file that is already staged/tracked.
+* git add <file_name> - This command is used to move the Unstaged files(both Tracked and Untracked files) from the Working Tree to the Staging Area. The files present in the Staging Area will be present in the next commit.
+* git add . or git add --all :- To add all the Unstaged files(both Tracked and Untracked) from the Working Tree to the staging Area(Staging context), all at once!
 
-* git add . - To add all the files available in the untracked/unstaged context/area/state to the staging context(tracked state) all at once!
+* git rm --cached <file_name> - To unstage/untrack a file that is already staged/tracked.
 
 * git restore --staged . - To unstage/untrack all the files at once!
 
-* git commit -m "commit message/description" - To commit or add commit messages/descriptions to the files that are in the staging area. This commands also helps in creating all the metadata regarding the commit, that can be referenced anytime and serve as a version of the project.
+* git commit -m <commit_message/description> - To commit or add commit messages/descriptions to the files that are in the staging area, it also moves Staged files from Staging Area to Git Directory and thus, saves all the changes in the Local Git Repo. This command also helps in creating all the metadata regarding the commit, that can be referenced anytime and serve as a version of the project.
 
-* git log - It will give the information about all the commits made till now.
+* git commit -a -m <commit_message/description> - Used to stage all the Tracked files and commit them with the provided/specified message.
+Note :
+- This command lets you skip the step of executing "git add" command.
 
-* git log -n "no. of commits required" - Logs the number of commits specified (latest) only.
+* git push - Helps in pushing the changes and commits made in Local Git Repo to Remote server(Remote Git Repo).
 
-* git log --committer="user name" - Logs all the commits done by the person with the specified username.
+* git log, or git log --all :- It will give the information about all the previous commits happened. We can filter commits based on multiple properties such as "number of days", "author", "recent number of commits done".
 
-* git log -n "no.of commits required" --committer="user name" - Logs the numbers of commits specified, by the person with the specified username.
+* git log -n <no._of_commits_required> - Show details of last n number of commits specified with the number(numerical value).
 
-* git show "commit ID" - Shows all the metadata regarding a particular commit Id including the changes made.
+* git log --committer=<user_name> - Logs/shows all the commits made by the person with the specified username.
 
-* git remote -v : Checks whether the local is connected to remote or not and if so, then it gives the URL for "fetch" and "push".
+* git log -n <no._of_commits_required> --committer=<user_name> - Logs the n numbers of commits specified with the number and, by the person specified with the username.
+
+* git log --oneline :- Shows details about each commit in one line.
+
+* git show <commit_id> - Shows all the metadata regarding a particular commit Id including the changes made.
+
+* git branch - To check all the available branches.
+- The (*)symbol before a branch name shows the 'active branch'.
+
+* git branch <branch_name> - Creates a new branch specified with the name.
+
+* git branch -d <branch_name> - Deletes a branch specified with the name.
+
+* git branch -a :- Makes all the branches present at the moment in the Remote Repo visible in the Local Git Repo.
+
+Note :
+* git checkout :
+- Used to navigate between branches.
+- Used to create and simultaneously checkout the new branch.
+- Used to move to a previous version in the same branch. 
+
+* git checkout <branch_name> - To navigate to a branch with the specified name.
+
+* git checkout -b <branch_name> - To create a new branch with the specified name and simultaneously checkout/navigate/move to the newly created branch. It uses two Git commands simultaneously, i.e., 1.(git branch <branch_name>) and then 2.(git checkout <branch_name>).
+
+* git checkout <commit_id> - Used to checkout the code at the specified commit ID. It Creates and navigates to a new temporary branch with Head detached. Which can be given a name afterwards.
+
+* git switch -c <new_branch_name> - To give a name to a temporary branch with Head detached(branch checkedOut with a certain commit ID), that was created using a "commit ID" in the first place.
+
+* (git switch -) :- The branch will switch to its parent branch(the branch out of which it was created). (This command is not recommended as it does not falls under the 'best practices").
+
+* git merge <branch_name> - This will merge the branch specified with the branch(<branch_name>), to the branch on which the command got executed.
+
+Question) - What are Merge Conflicts in Git?
+Answer) - A merge conflict occurs when we merge two branches and Git is unable to automatically resolve the differences in code/files between that two branches.
+
+Question) - When does a merge conflict occur?
+Answer) - A merge conflict occurs when two different changes are made to the same line in the same file. For example, If one user deletes a line and another user modifies the same line on a different branch, then a merge conflict occurs.
+And later, when two branches having different changes on the same line are to be merged, merge conflict occurs.
+
+Question) - How to resolve Merge Conflicts?
+Answer) - Git displays Merge Conflict areas in the file between the conflict markers as shown below :
+ <<<<<<<<< HEAD
+ <Changes in the current branch>
+ =========
+ <Changes in the incoming branch>
+ >>>>>>>>> Branch Name
+ - We can resolve the conflict manually by editing the piece between the markers.
+ - We should also remove the markers added by Git.
+ - We can then commit the changes and, thus, it fixes the Merge Conflict.
+
+# Git commands are used to resolve Merge Conflicts :
+ - You can resolve merge conflicts by editing the file and removing conflicts, but some Git commands can help in a better way. These include the following :
+ * git status - Gives an idea of merge conflicts that have occurred.
+ * git log --merge :- Produces a log with all the commits that have caused conflicts during the merging of branches.
+ * git diff - Finds the differences between the states of a repository/files and thus, it can help us find and prevent Merge Conflicts.
+ * git checkout - Used to undo changes made to Unstaged files(Recall that this is also used for switching branches and commits).
+ * git reset - Used to undo changes made to the Working Directory and the Staging Area to the last stable commit. This basically works for the set of lines in the aforementioned areas unlike - "git checkout", which can even work on specified files.
+ * git merge --abort :- Used to exit from the merge process and return the branch to the state prior to the start of the merging process.
+
+* git merge --abort :- Used to exit from the merge process and return the branch to the state prior to the start of the merging process.
+
+* git diff - Finds the differences between the states of a repository/files and thus, it can help us find and prevent Merge Conflicts.
+
+* git log --merge :- Produces a log with all the commits that have caused conflicts during the merging of branches.
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+* git clone - To copy/clone a Remote Git Repository to a Local Git Repository.
+
+* git clone <SSH_or_HTTPS_url> - Used to copy/clone a Repo from the provided Remote Repo, it will create a directory with the name of the Remote Repo.
+
+* git clone <SSH_or_HTTPS_url> <directory_name> - Used to clone a Repo from the provided Remote Repo and save it in a new directory with the name : <directory_name>.
+
+# Consequences of running "git clone" command :
+1. It creates a directory named similar/same/identical as Remote Repository inside the projects directory.
+2. It downloads the ".git" folder from the Remote Git Repository.
+3. It provides a working copy of the latest version of the Remote Git Repository.
+
+Question) - Which of the following commands will help you to download a new Git Repository from the remote?
+1. git init
+2. git clone
+3. git remote add origin
+4. None of the above
+
+Answer) - 
+2. git clone
+
+-----------------------------------------------------------------------------------------------------
+
+* git pull - To fetch all the changes/commits/version from the Remote Repo to the Local Git Repo, it executes a two step process to fetch the changes from the Remote Repo, namely : 1. "git fetch" and followed by 2. "git merge". Thus, it creates a merge commit as a result of this command.
+
+# To overcome this(Merge commit getting created) Consequences of "git pull" command, we use two commands one after the other instead, namely :
+- git fetch :- To fetch or download the changes from the Remote Repo to the Local Repo.
+And then followed by the command :
+- git rebase origin master/main :- To sync the origin/master of Remote Repo to the master/main of Local Repo.
+And thus, by these two above commands we can get read of "merge commits".
+
+# git pull :
+- Pulls updates from the given origin and master/main branch, and merges them with the current branch.
+* git pull <remote> <branch> - Pulls updates from the given Remote Repo and branch, and merges them with the current branch.
+* git pull <remote> - Pulls updates from the given Remote Repo and master/main branch, and merges them with the current branch.
+
+# git fetch :
+- Used to download all the changes from a Remote Repository to the Local Repository.
+- Also used to check all the updates in the Remote Repository.
+* git fetch <remote> - Fetches all the data from the provided Remote Repo link.
+* git fetch <remote> <branch_name> - Fetches all the data from the provided Remote Repo link and the specified branch.
+* git fetch --all :- Fetches all the data from all the Remote locations added in the Local Repository.
+
+# git fetch Vs git pull :
+- The "git pull" command is a combination of two other commands, "git fetch" followed by "git merge".
+* For example, suppose you are currently in the feature1 branch and execute "git pull origin feature2" command :
+- In the first stage of the operation, Git will execute "git fetch origin feature2" command and will download all the changes from the Remote Repository to the Local Repository corresponding to the feature2 branch.
+- Once the content is downloaded, Git will execute "git merge feature2" command and merge the feature2 branch with the current branch, which is feature1, if there is no merge conflict.
+
+* git pull - To fetch commits/changes/version from the Remote Repo, it executes a two step process to fetch the changes from the Remote Repo, namely : 1. git fetch and followed by 2. git merge. Thus, it creates a merge commit as a result of this command.
+To overcome this "Merge commit getting created", we use two commands one after the other, namely :
+- git fetch - To fetch and download all the changes from the Remote Repo to the Local Repo.
+And then followed by the command :
+- git rebase origin master/main - To sync the origin/master of Remote Repo to the master/main of Local Repo.
+And thus, by these two above commands we can get read of "merge commits".
+
+------------------------------------------------------------------------------------------------------
+
+# Steps to connect our Local Repo to a Remote Repo(GitHub.com) :
+1. git branch -M master/main
+2. git remote add origin <url>
+3. git push -u origin master/main
+
+# Add a new remote to your Local Git Repository :
+
+* While creating a Git Repository, you need to add a remote/cloud-based repository for the following purposes :
+- To keep a copy of the source code available at any time or location.
+- To collaborate with team members and other programmers across multiple locations.
+
+* We can add a remote to your Git repository using the following command :
+- "git clone <SSH_or_HTTPS_url>" or "git clone <SSH_or_HTTPS_url> <directory_name>"
+Note : 
+- We can have multiple remote locations(remote repositories) added to our Local Git Repository.
+The above command adds a new remote location with the same 'origin' and connects to the given link of the Remote Repository.
+
+* git remote -v :- Checks whether the local is connected to remote or not and if so, then it gives the URL for "fetch" and "push".
+
+---------------------------------------------------------------------------------------------------------------------------------
 
 
 4.) Branching in Git :
 
 Question) - Why do we need branching in Git?
 Answer) - We can understand the need of branching in Git by observing a scenario, like :
-* Scenario : Consider, you have a running live website, and you want to add some new features to it. For this we can apply an approach:
-* Approach 1 : Stop running the website and then make changes to the code in the master codebase.
-* Approach 2 : Make changes to the code in the master codebase of the running website.
+# Scenario : Consider, you have a running live website, and you want to add some new features to it. For this we can apply an approach :
+* Approach 1 : Stop running the website and then make changes to the code in the main/master codebase.
+* Approach 2 : Make changes to the code in the main/master codebase of the running website.
 Note :
-But these two approaches are not appropriate as they can create hindrance in the website status. So, we need a way where the master codebase of the website remains untouched until we complete updating the code of the new feature.
+- But these two approaches are not appropriate as they can create hindrance in the website status. So, we need a way where the main/master codebase of the website remains untouched until we complete updating the code of the new feature.
 Hence, branching comes to the rescue in this intricate situation.
-Branch can be created at a specific commit or instance as a copy of the master codebase, then developers can work on specific code instances and develop features independent of the master codebase and later merge it with master codebase without hampering the running website.
+Branch can be created at a specific commit or instance as a copy of the main/master codebase, then developers can work on specific code instances and develop features independent of the main/master codebase and later merge it with master codebase without hampering the running website.
 
-* Branch is a generally a copy of the master codebase, originating out of a specific commit or instance.
+* Branch is a generally a copy of the main/master codebase, originating out of a specific commit or instance.
 
 * Concept of branch is present in nearly all the Version Control System out there.
 
 * When we first initialize git, it comes with a default branch named main or master.
 
-* Branch provides isolation from the master codebase, so individual contributors can work independently and these branches can be termed as 'feature branches'.
+* Branch provides isolation from the main/master codebase, so individual contributors can work independently and these branches can be termed as 'feature branches'.
 
-Branching - Introduction and need :
+# Branching - Introduction and need :
+
 - Branching is a Git feature that helps you create new branches.
 
 - You need to create new branches to add or fix changes in the source code, without affecting the main codebase.
 
 - When you finish making the changes, you can merge those branches with the main/master and update the main codebase.
 
-Commonly used commands :
+# Commonly used commands :
 
 * git branch - To check all the available branches.
 - The (*)symbol before a branch name shows the 'active branch'.
 
-* git branch "branch name" - Creates a new branch specified with the name.
+* git branch <branch_name> - Creates a new branch specified with the name.
 
-* git branch -d "branch name" - Deletes a branch specified with the name.
+* git branch -d <branch_name> - Deletes a branch specified with the name.
 
-* git checkout "branch name" - To navigate to a branch specified with the name.
+* git branch -a :- Makes all the branches present at the moment in the Remote Repo visible in the Local Git Repo.
 
-* git checkout -b "branch name" - To create and navigate to a new branch respectively at the same time. It uses two Git commands one after the other, i.e., (git branch "branch name") and then (git checkout "branch name").
+Note :
+* git checkout :
+- Used to navigate between branches.
+- Used to create and simultaneously checkout the new branch.
+- Used to move to a previous version in the same branch. 
 
-* git checkout "commit ID" - Creates and navigates to a new temporary branch with Head detached.
+* git checkout <branch_name> - To navigate to a branch with the specified name.
 
-* git switch -c "new branch name" - To give a name to a temporary branch with Head detached, that was created using a "commit ID" in the first place.
+* git checkout -b <branch_name> - To create a new branch with the specified name and simultaneously checkout/navigate/move to the newly created branch. It uses two Git commands simultaneously, i.e., 1.(git branch <branch_name>) and then 2.(git checkout <branch_name>).
 
-* (git switch -) - The branch will switch to its parent branch(the branch out of which it was created). (This command is not recommended as it does not falls under the 'best practice").
+* git checkout <commit_id> - Used to checkout the code at the specified commit ID. It Creates and navigates to a new temporary branch with Head detached. Which can be given a name afterwards.
 
-* git merge "branch name" - This will merge the branch specified with the branch in which this command is run.
+* git switch -c <new_branch_name> - To give a name to a temporary branch with Head detached(branch checkedOut with a certain commit ID), that was created using a "commit ID" in the first place.
 
-* git merge --abort - To abort the merge.
+* (git switch -) :- The branch will switch to its parent branch(the branch out of which it was created). (This command is not recommended as it does not falls under the 'best practices").
 
-* git log --merge - Logs the commits that let to a "Merge Conflict" at the first place.
+* git merge <branch_name> - This will merge the branch specified with the branch(<branch_name>), to the branch on which the command got executed.
+
+Question) - What are Merge Conflicts in Git?
+Answer) - A merge conflict occurs when we merge two branches and Git is unable to automatically resolve the differences in code/files between that two branches.
+
+Question) - When does a merge conflict occur?
+Answer) - A merge conflict occurs when two different changes are made to the same line in the same file. For example, If one user deletes a line and another user modifies the same line on a different branch, then a merge conflict occurs.
+And later, when two branches having different changes on the same line are to be merged, merge conflict occurs.
+
+Question) - How to resolve Merge Conflicts?
+Answer) - Git displays Merge Conflict areas in the file between the conflict markers as shown below :
+ <<<<<<<<< HEAD
+ <Changes in the current branch>
+ =========
+ <Changes in the incoming branch>
+ >>>>>>>>> Branch Name
+ - We can resolve the conflict manually by editing the piece between the markers.
+ - We should also remove the markers added by Git.
+ - We can then commit the changes and, thus, it fixes the Merge Conflict.
+
+# Git commands are used to resolve Merge Conflicts :
+ - You can resolve merge conflicts by editing the file and removing conflicts, but some Git commands can help in a better way. These include the following :
+ * git status - Gives an idea of merge conflicts that have occurred.
+ * git log --merge :- Produces a log with all the commits that have caused conflicts during the merging of branches.
+ * git diff - Finds the differences between the states of a repository/files and thus, it can help us find and prevent Merge Conflicts.
+ * git checkout - Used to undo changes made to Unstaged files(Recall that this is also used for switching branches and commits).
+ * git reset - Used to undo changes made to the Working Directory and the Staging Area to the last stable commit. This basically works for the set of lines in the aforementioned areas unlike - "git checkout", which can even work on specified files.
+ * git merge --abort :- Used to exit from the merge process and return the branch to the state prior to the start of the merging process.
+
+* git merge --abort :- Used to exit from the merge process and return the branch to the state prior to the start of the merging process.
+
+* git diff - Finds the differences between the states of a repository/files and thus, it can help us find and prevent Merge Conflicts.
+
+* git log --merge :- Produces a log with all the commits that have caused conflicts during the merging of branches.
+
+-----------------------------------------------------------------------------------------------------------------------------------
 
 
-5.) Syncing with the Central Repository :
+5.) Syncing with the Central/Mater/Remote Repository :
 
-Steps to connect our Local Repo to a Remote Repo(GitHub.com) :
+# Steps to connect our Local Repo to a Remote Repo(GitHub.com) :
 1. git branch -M master/main
 2. git remote add origin "url"
 3. git push -u origin master/main
 
-Common commands :
+# Common commands :
 
-* git clone "url" - To clone a Remote Git Repository using/specifying the web URL for that remote repo.
+* git clone - To copy/clone a Remote Git Repository to a Local Git Repository.
 
-* git branch -a - Shows all the branches present at the moment in the Remote Repo.
+* git clone <SSH_or_HTTPS_url> - Used to copy/clone a Repo from the provided Remote Repo, it will create a directory with the name of the Remote Repo.
+
+* git clone <SSH_or_HTTPS_url> <directory_name> - Used to clone a Repo from the provided Remote Repo and save it in a new directory with the name : <directory_name>.
+
+# Consequences of running "git clone" command :
+1. It creates a directory named similar/same/identical as Remote Repository inside the projects directory.
+2. It downloads the ".git" folder from the Remote Git Repository.
+3. It provides a working copy of the latest version of the Remote Git Repository.
+
+Question) - Which of the following commands will help you to download a new Git Repository from the remote?
+1. git init
+2. git clone
+3. git remote add origin
+4. None of the above
+
+Answer) - 
+2. git clone
+
+-----------------------------------------------------------------------------------------------------
+
+* git pull - To fetch all the changes/commits/version from the Remote Repo to the Local Git Repo, it executes a two step process to fetch the changes from the Remote Repo, namely : 1. "git fetch" and followed by 2. "git merge". Thus, it creates a merge commit as a result of this command.
+
+# To overcome this(Merge commit getting created) Consequences of "git pull" command, we use two commands one after the other instead, namely :
+- git fetch :- To fetch or download the changes from the Remote Repo to the Local Repo.
+And then followed by the command :
+- git rebase origin master/main :- To sync the origin/master of Remote Repo to the master/main of Local Repo.
+And thus, by these two above commands we can get read of "merge commits".
+
+# git pull :
+- Pulls updates from the given origin and master/main branch, and merges them with the current branch.
+* git pull <remote> <branch> - Pulls updates from the given Remote Repo and branch, and merges them with the current branch.
+* git pull <remote> - Pulls updates from the given Remote Repo and master/main branch, and merges them with the current branch.
+
+# git fetch :
+- Used to download all the changes from a Remote Repository to the Local Repository.
+- Also used to check all the updates in the Remote Repository.
+* git fetch <remote> - Fetches all the data from the provided Remote Repo link.
+* git fetch <remote> <branch_name> - Fetches all the data from the provided Remote Repo link and the specified branch.
+* git fetch --all :- Fetches all the data from all the Remote locations added in the Local Repository.
+
+# git fetch Vs git pull :
+- The "git pull" command is a combination of two other commands, "git fetch" followed by "git merge".
+* For example, suppose you are currently in the feature1 branch and execute "git pull origin feature2" command :
+- In the first stage of the operation, Git will execute "git fetch origin feature2" command and will download all the changes from the Remote Repository to the Local Repository corresponding to the feature2 branch.
+- Once the content is downloaded, Git will execute "git merge feature2" command and merge the feature2 branch with the current branch, which is feature1, if there is no merge conflict.
 
 * git pull - To fetch commits/changes/version from the Remote Repo, it executes a two step process to fetch the changes from the Remote Repo, namely : 1. git fetch and followed by 2. git merge. Thus, it creates a merge commit as a result of this command.
 To overcome this "Merge commit getting created", we use two commands one after the other, namely :
-- git fetch - To fetch the changes from the Remote Repo to the Local Repo.
+- git fetch - To fetch and download all the changes from the Remote Repo to the Local Repo.
 And then followed by the command :
 - git rebase origin master/main - To sync the origin/master of Remote Repo to the master/main of Local Repo.
 And thus, by these two above commands we can get read of "merge commits".
 
-Common facts :
+----------------------------------------------------------------------------------------------------------------------------------
+
+# Common facts :
 
 - If a repo from remote server is cloned onto local, then Git will already be initialized and it will be pre-ready for Version Control.
 
-- All the branches of Remote Repo are not reflected inside the cloned Local Repo, in order to view those hidden branches run the command : git branch -a in your terminal/GitBash.
+- All the branches of Remote Repo are not reflected inside the cloned Local Repo, in order to view those hidden branches run the command : "git branch -a" in your terminal/GitBash.
 
 - All the commits made in Local Repo before connecting it to the Remote Repo will be preserved and will reflect in the Remote Repo after the connection.
-
-- When we fetch commits/changes/version from the Remote Repo, we use the command : git pull, it executes a two step process to fetch the changes from the Remote Repo, namely : 1. git fetch and followed by 2. git merge. Thus, it creates a merge commit as a result of this command.
-To overcome this "Merge commit getting created", we use two commands one after the other, namely :
-- git fetch - To fetch the changes from the Remote Repo to the Local Repo.
-And then followed by the command :
-- git rebase origin master/main - To sync the origin/master of Remote Repo to the master/main of Local Repo.
-And thus, by these two above commands we can get read of "merge commits".
 
 Question) - What is the difference between git pull and git rebase commands?
 Answer) - git pull creates a merge commit when we fetch the changes from the Remote Repo to our Local Repo. 
 But, if we want to fetch the changes without a merge commit, then we run git fetch to retrieve the change from the Remote Repo and after that we run git rebase origin master to rebase or reflect those changes to our Local Git Repository. And thus, it logs a clean commit history.
 
----------------------------------------------------------------------------------------------------------
+6.) .gitignore file :
+* Used to ignore Untracked files.
+- For example, suppose we do not want to include the log files with ".log" extension, then, we can achieve this using the .gitignore file. In the .gitignore file, we have to enter a line with the following pattern :
+    - * .log
+Now, all the files with the ".log" extension will be ignored by the Git.
+This file should be present at the root level(the same folder in which .git folder is present)
 
+Note :
+- You can see the complete list of rules for writing patterns in the .gitignore file here : https://git-scm.com/docs/gitignore
+
+
+
+---------------------------------------------------------------------------------------------------------
 
