@@ -167,9 +167,9 @@ GitBash Commands :
 
 * git config --global user.email "Enter your email id" - For changing the email id and providing the context as 'global' to the Git.
 
-* rm -f "file name" - Deletes/removes the specified file.
+* rm -rf "file name" - Deletes/removes the specified file.
 
-* rm -f .git - Undo the git initialization by deleting the ".git" folder.
+* rm -rf .git - Undo the git initialization by deleting the ".git" folder.
 
 VI Text Editor Commands(should be run in the GitBash) :
 
