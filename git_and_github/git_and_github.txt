@@ -26,7 +26,7 @@ And one of the most used VCS tool today is called Git.
 
 Question) - What are the advantages of using a Version Control System(VCS)?
 Answer) -
-Following can be considered as the advantages of using a Version Control System(VCS) :
+Following can be considered as the advantages of using a Version Control System(VCS) over manually controlled versions :
 * One can maintain and track all the changes/modifications done between different versions of a file and can also store the metadata for all the individual changes for better reference.
 * You can make a remote copy of the Project and if some file or folders got deleted or lost from the local, then we can get it from the remote server, and also we can download the entire Project from the remote to our local machine as well.
 * It helps in making it easy to create backups and revert changes whenever needed.
@@ -82,7 +82,7 @@ Answer) -
 Git is one of the most popular amongst VCS's.
 As of 2025, the most popular version control systems with significant market share are likely to be: Git (dominant market share), GitHub, GitLab, Bitbucket, AWS CodeCommit, with smaller shares held by Subversion (SVN), Perforce, and Helix Core; with Git widely considered the leading option due to its open-source nature, ease of use, and distributed version control capabilities.
 
-Key points about these systems:
+Key points about these Version Control  Systems:
 
 • Git: The most widely used version control system, offering a distributed approach with excellent performance for both small and large projects.
 
@@ -133,6 +133,21 @@ Alternatives to GitHub:
 * SourceForge
 * Most cloud providers
 
+Question) - Which of the following is an important usage of the Version Control System?
+1. Testing the code
+2. Checking the code functionality
+3. Collaborating with the team
+4. Maintaining versions
+
+Answer) - 
+3. Collaborating with the team
+4. Maintaining versions
+
+You can follow either of the options given below to start with Git :
+- You can turn the Local Directory that is not currently under version control into a Git Repository.
+OR,
+- You can "clone"(copy with all details) an existing Git Repository from any location or server such as GitHub and BitBucket.
+
 GitBash Commands :
 
 * pwd - It fetch and gives us the 'Present Working Directory(pwd).
@@ -171,29 +186,44 @@ GitBash Commands :
 
 * rm -rf .git - Undo the git initialization by deleting the ".git" folder.
 
-VI Text Editor Commands(should be run in the GitBash) :
+VIM Text Editor Commands(should be run in the GitBash) :
 
-* vi "file name" - Creates a file and opens it in a vi file editor.
+* vi "file name" or vim "file name" - To create a new file and open, or to open an existing file to modify.
 
-* i - To insert anything into the file running the vi editor.
+* i - To start inserting or editing a file running in the vim editor.
 
-* Esc, :wq! - That means write and quit, which saves the file and also closes the vi text editor.
+* Esc, :wq! - That means write and quit, which saves the file and also exits the VIM text editor/file.
+
+* Get a complete list of cod(UNIX) commands at :- https://en.wikipedia.org/wiki/List_of_POSIX_commands
 
 Git Commands :
 
 * git init - To initialize a Local Git Repository, so that Git can perform Version Control for that particular project/folder and it should be run only once. After the initialization completes, one .git file gets created automatically called as (GIT DIR) or Git Directory.
 
-* git status - Command to check the status of the "Git" VCS.
+* git status - Command to check the status of the Working Tree and the Staging Area. Shows the status of all the Untracked and Tracked files(whether Staged or Unstaged).
+* git status -s :- In this short status command, each file is appended with a symbol the form of XY, where X shows the status of Staging Area and Y shows the status of the Working Tree.
+Different Symbols :
+1.) "" - Unmodified
+2.) M - Modified
+3.) A - added
+4.) ?? - Untracked
+Different Combinations :
+* A - Added to the Staging Area and not Modified(Tracked + Staged).
+* AM - Added to the Staging Area but again Modified(Tracked + Unstaged).
+Note :
+- You can see the complete list of symbols and combinations here - https://git-scm.com/docs/git-status
 
-* git add "file name" - To add an untracked/unstaged file to the tracked/staged context(state).
+* git add "file name" - This command is used to move the Unstaged files(both Tracked and Untracked) files from the Working Tree to the Staging Area. The files present in the Staging Area will be present in the next commit.
+* git add . or git add --all :- To add all the Unstaged files(both Tracked and Untracked) from the Working Tree to the staging Area(Staging context), all at once!
 
 * git rm --cached "file name" - To unstage/untrack a file that is already staged/tracked.
 
-* git add . - To add all the files available in the untracked/unstaged context/area/state to the staging context(tracked state) all at once!
-
 * git restore --staged . - To unstage/untrack all the files at once!
 
-* git commit -m "commit message/description" - To commit or add commit messages/descriptions to the files that are in the staging area. This commands also helps in creating all the metadata regarding the commit, that can be referenced anytime and serve as a version of the project.
+* git commit -m "commit message/description" - To commit or add commit messages/descriptions to the files that are in the staging area, it also moves Staged files from Staging Area to Git Directory and thus, saves all the changes in the Local Git Repo. This commands also helps in creating all the metadata regarding the commit, that can be referenced anytime and serve as a version of the project.
+* git commit -a -m "commit message/description" - Used to stage all the Tracked files and commit them with the given message.
+Note :
+- This command lets you skip the step of executing "git add" command.
 
 * git log - It will give the information about all the commits made till now.
 
@@ -228,14 +258,36 @@ Git Commands :
 
 * git log --merge - Logs the commits that let to a "Merge Conflict" at the first place.
 
-* git clone "url" - To clone a Remote Git Repository using/specifying the web URL for that remote repo.
-
-* git remote -v : Checks whether the local is connected to remote or not and if so, then it gives the URL for "fetch" and "push".
+* git clone "SSH OR HTTPS url" - To clone a Remote Git Repository using/specifying the web URL for that remote repo.
+Consequences of running "git clone" command :
+1. It creates a directory named same as Remote Repository inside the projects directory.
+2. It downloads the .git folder from the Remote Git Repository.
+3. It provides a working copy of the latest version of the Remote Git Repository.
 
 Steps to connect our Local Repo to a Remote Repo(GitHub.com) :
 1. git branch -M master/main
 2. git remote add origin "url"
 3. git push -u origin master/main
+
+Add a new remote to your Local Git Repository :
+* While creating a Git Repository, you need to add a remote/cloud-based repository for the following purposes :
+- To keep a copy of the source code available at any time or location.
+- To collaborate with team members and other programmers across multiple locations.
+* You can add a remote to your Git repository using the following command :
+- git clone <SSH or HTTPS url>
+Note : You can have multiple remote locations(remote repositories) added to our Local Git Repository.
+The above command adds a new remote location with the same 'origin' and connects to the given link of the Remote Repository.
+
+Question) - Which of the following commands will help you to download a new Git Repository from the remote?
+1. git init
+2. git clone
+3. git remote add origin
+4. None of the above
+
+Answer) - 
+2. git clone
+
+* git remote -v : Checks whether the local is connected to remote or not and if so, then it gives the URL for "fetch" and "push".
 
 * git branch -a - Shows all the branches present at the moment in the Remote Repo.
 
@@ -253,8 +305,13 @@ And thus, by these two above commands we can get read of "merge commits".
 
 3.) Making changes to the Local Repository :
 
-Stages of Git :
+To understand how Git works, you need to understand the three states/stages and areas of a Git Project :
+* Three(3) States :
+1.) Modified, Untracked
+2.) Staged
+3.) Committed
 
+Stages of Git :
 Stage 1 :
 - Untracked or Unstaged : The stage where the files are not added to the staging area for the Git to track changes/versions.
 
@@ -263,6 +320,19 @@ Stage 2 :
 
 Stage 3 :
 - commit stage : The stage where the file is observed/tracked by the Git and we just need to commit the changes by providing a commit message to it. Commit message is mainly written as a "Giving instruction in Present Tense with authoritative tone".
+
+* Three(3) Areas :
+1.) The Working Tree
+2.) The Staging Area
+3.) The Git Directory
+
+The Git workflow :
+
+1.) When you add new files to the Local Git Repo, those files are called untracked files and reside in the Working Tree.
+
+2.) The files you want to save in the next version need to be moved from the Working Tree yto Staging Area. Such files are called staged files.
+
+3.) You can save the staged files in the next version by moving them to the Git directory, they are moved back to the Working Tree and are called modified files.
 
 Commonly used commands :
 
