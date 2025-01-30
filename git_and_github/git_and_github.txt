@@ -230,6 +230,8 @@ Git Commands :
 
 * git clone "url" - To clone a Remote Git Repository using/specifying the web URL for that remote repo.
 
+* git remote -v : Checks whether the local is connected to remote or not and if so, then it gives the URL for "fetch" and "push".
+
 Steps to connect our Local Repo to a Remote Repo(GitHub.com) :
 1. git branch -M master/main
 2. git remote add origin "url"
@@ -288,6 +290,8 @@ Commonly used commands :
 
 * git show "commit ID" - Shows all the metadata regarding a particular commit Id including the changes made.
 
+* git remote -v : Checks whether the local is connected to remote or not and if so, then it gives the URL for "fetch" and "push".
+
 
 4.) Branching in Git :
 
@@ -308,6 +312,13 @@ Branch can be created at a specific commit or instance as a copy of the master c
 * When we first initialize git, it comes with a default branch named main or master.
 
 * Branch provides isolation from the master codebase, so individual contributors can work independently and these branches can be termed as 'feature branches'.
+
+Branching - Introduction and need :
+- Branching is a Git feature that helps you create new branches.
+
+- You need to create new branches to add or fix changes in the source code, without affecting the main codebase.
+
+- When you finish making the changes, you can merge those branches with the main/master and update the main codebase.
 
 Commonly used commands :
 
