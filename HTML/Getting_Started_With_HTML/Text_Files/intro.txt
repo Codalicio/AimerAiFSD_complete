@@ -1,0 +1,387 @@
+--------------------------------------------------------------------------------------
+
+# TOPIC - HTML :
+
+-----------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------
+
+* HTML stands for "HyperText Markup Language".
+- HyperText : The word "HyperText" is derived from the word "HyperLink". HyperLinks are sources that link/connect different documents to each other or different parts of the same document.
+- Markup : 
+
+* The first website that was created was - https://info.cern.ch/
+
+* HTML is a markup language that is understood by browsers only.
+
+* HTML files are store with ".html" or ".html" extension but ".html" is preferred!
+
+---------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------
+
+# Getting Started With HTML :
+
+# Introduction to HTML :
+
+- HTML is the backbone of web development.
+- It stands for "HyperText Markup Language".
+- It helps set the structure of the content in our web pages.
+
+
+# Let's understand what is the meaning of HTML :
+
+1. HyperText : It relates to the link that we include on our webpage. The word "HyperText" comes from the word "HyperLink".
+2. Markup : Markup means to define and present text content.
+3. Language : Language gives rules and syntax to follow while writing any code.
+
+- Without HTML, browsers would not know the actual structure of of our web page or how to display elements like texts, audio or images.
+- The file extension that should be used is ".html" like : index.html
+- ".htm" is also used as an extension for html files but one should use ".html" for better consistency and compatibility.
+
+
+# Structure of HTML Document :
+
+Let's create our first HTML Doc - "Hello World" :
+
+* Step 1 : Create a new file with the name "firstDoc.html".
+* Step 2 : Paste following code into the file and save.
+* Step 3 : Open the file using any browser and we are done with our first HTML project.
+
+# Code snippet of this first project(firstDoc.html) :
+
+---------------------------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello, World!</title>
+</head>
+<body>
+    <h1>Hello, World!</h1>
+    <p>This is my first HTML page.</p>
+</body>
+</html>
+-----------------------------
+
+# Now let's understand the above code one by one :
+
+# <!DOCTYPE html> :
+
+- We start the file with <!DOCTYPE html>. 
+- <!DOCTYPE html> tells the browser what type of document to expect; in this case it is an HTML document.
+-  <!DOCTYPE html> declaration represents the document type, and help browsers to display web pages correctly.
+- <!DOCTYPE html> must appear only once, at the top of the page(before html tag).
+- <!DOCTYPE html> declaration is not case sensitive. We can write any of the following, it does not give any error :
+* <!DOCTYPE html>
+* <!DocType html>
+* <!Doctype html>
+* <!doctype html>
+
+
+# <html lang="en"> :
+
+ - Here the <html> tag represents the root of an HTML document or we can say it is the container for all other HTML elements(except <!DOCTYPE html>) tag.
+
+* lang = "en" : 
+
+- lang = "en" is the language attribute and it tells the browser the default language. In this case it is "english-en".
+
+
+Question) - What is a tag?
+Answer) -
+HTML uses a system of "tags" to define the structure and layout of web pages.
+Tags are the building blocks of HTML documents and consist of "angle brackets" enclosing specific keywords.
+These tags provide instructions to web browsers on how to display the content.
+An HTML tag is composed of an "opening tag" and, in some cases a "closing tag". The opening tags starts with the less-than symbol(<), followed by the tag_name, and ends with a greater than symbol(>). The closing tag is similar, but it also includes a forward-slash(/) before the tag_name.
+
+* For example :
+- Opening tag : <tag_name>
+- Closing tag : </tag_name>
+
+
+# <head> :
+
+- <head> is the head section of the HTML document, which contains meta-information about the document, such as the "title" of the web page, that appears in the browser's title bar or tab.
+
+* <meta> :
+
+- The <meta> tag in HTML is used to provide metadata about the HTML document. Metadata is data about the data, and in the context of HTML, it includes information such as the "character set", "page description", "keywords", "author of the document", and "viewport settings".
+
+# Code example for <meta> tag :
+
+-------------------------------------
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+-------------------------------------
+
+# <meta charset="UTF-8"> :
+
+- This <meta> tag specifies the character encoding for the HTML document.
+
+* charset :
+
+- This attribute defines the character encoding.
+- Character encoding is a system of bytes into characters.
+
+* UTF-8 : 
+
+- UTF-8(Unicode Transformation Format - 8bit) is a popular character encoding that can represent every character in the Unicode character set.
+- UTF-8 is a variable-width character encoding used for electronic communication.
+- UTF-8 can represent any character in the Unicode standard, yet it is backward compatible with ASCII.
+- UTF-8 is the dominant character encoder for the web.
+
+* Importance :
+
+- Using <meta charset="UTF-8"> tag ensures that your web page can display any character correctly, including special symbols and characters from different languages. It prevent issues like "garbled text" when displaying content.
+
+* <meta name="viewport" content="width=device-width, initial-scale=1.0"> :
+
+- This <meta> tag controls the layout on mobile browsers.
+
+1.) viewport :
+
+- The viewport is the user's visible area of a web page.
+- It's different from the screens actual size, which might be larger or smaller.
+
+2.) width :
+
+- The "width=device-width" part sets the width of the viewport to be the same as the width of the device. This means that our page will be as wide as the device screen.
+
+3.) initial-scale :
+
+- The "initial-scale=1.0" part sets the initial zoom level when the page is first loaded.
+- A scale of 1.0 means no zoom; the content is displayed at 100% scale(actual size).
+
+* Importance :
+
+- This <meta name="viewport" width"device-width, initial-scale=1.0"> tag is essential for responsive web design.
+- It helps ensure that your website is displayed correctly on all devices, from desktops to tablets to smartphones.
+- Without this tag, mobile browsers may render pages at a desktop screen width and then scale them down, which often leads to poor user experience.
+
+* <title> :
+
+- This <title> tags sets the "title" of the web page. In this example it's set to "Hello, World! :
+
+-------------------------------
+
+<title>Hello, World!</title>
+
+-------------------------------
+
+- The <title> tag is like a label for a web page.
+- It should only have words, and it appears at the top of your web browser or on the tab of the page.
+- We must use the <title> tag in our web page.
+- The words/content inside the <title> element is really important for getting our web page found in search engines (like Google).
+- Search engines use the content of the <title> element to figure out where to put your page in the search results.
+- When we bookmark a web page, the title we set using the <title> tag appears as the name of the bookmark.
+- When we search for something on a search engine like Google, the titles of the web pages in the search results are the ones defined by the <title> tag. Also the search results web page's title will be same as the search term.
+
+* The <title> tag does three things :
+
+- It gives a name for the web page in the web browser.
+- It gives a name for the web page when you save it in your favorites.
+- It gives a name for the web page in the search results.
+
+* Here are some ideas for making good titles :
+
+- Make the title longer and describe what the page is about. Short titles with only one or two words are not considered good.
+- Search engines only show about 50-60 letters of the title, so don't make it too long.
+- Don't just list words in the title. If you do your web page might not show up as much in search results.
+- Thus, try to make the title accurate and meaningful!
+
+* Remember :
+
+- We can only have one <title> tag in our web page.
+
+
+# <body> :
+
+- This tag defines the body section of the HTML document, which contains the visible content of the web page, such as headings, paragraphs, and more.
+
+* <h1> :
+
+- <h1> is a heading tag, used to define a top-level heading. In this example, it displays the text "Hello, World!" as heading :
+
+-------------------------------------
+
+<h1>Hello, World!</h1>
+
+-------------------------------------
+
+* <p> :
+
+- <p> is a paragraph tag, used to define da paragraph of text. In this example, it displays the text "This is my first HTML page." as a paragraph :
+
+----------------------------------------
+
+<p>This is my first HTML page.</p>
+
+----------------------------------------
+
+
+# Important Note :
+
+- When you don't close an HTML tag properly, such as an <h1> tag, it's leads to what known as "open" tags. The browser will still try to render the content as best as it can, but it may have unexpected and undesirable consequences on the layout and appearance of the webpage.
+- Thus, to avoid any issues always close HTML tags properly.
+
+
+Question) - What are VS Code Extensions?
+Answer) -
+- Imagine you have a toolbox full of special tools that make building things easier, VS Code Extensions are like those tools but for your coding. They add extra abilities to help you code faster and better.
+
+
+Question) - Why should you use extensions?
+Answer) -
+- Using VS Code Extensions is like having a secret helper by your side.
+- They speed up your work, fix mistakes, and make coding more fun. Just like adding cool apps to your phone, extensions make your coding software awesome and tailored to your needs.
+
+
+* Getting VS Code Extensions is as easy as getting a new app for your phone :
+
+1. Open VS Code
+
+2. Go to extensions : 
+- Look for the extensions icon on the sidebar and click on it.
+
+3. Search and Install : 
+- In the extension marketplace, search for the extensions you want, when you find it, click install.
+
+* Enjoy the magic :
+- once installed, your new extensions are ready to use. You might need to configure it but that's usally easy too.
+
+* Enable and Disable extension(if you ever need to) :
+- Extensions are like superhero costumes - you can wear them when you want and take them off when you are done.
+
+
+* Here's how you can enable or disable your extensions :
+
+1. Manage Extension :
+- Click on the Extensions icon again.
+
+2. View Installed Extensions :
+- You will see a list of installed extensions. You can turn them on or off with a switch.
+
+* Restart VS Code :
+- Sometimes you might need to restart VS code to apply changes after turning an extension on or off.
+
+
+# Must-have VS Code Extensions for Web Development :
+
+1. CSS Peek : 
+
+* Quick Looks :
+- With CSS Peek, you can peek into the styles right from your HTML or JavaScript code.
+
+* Fast Navigation :
+- Imagine having a magic window that shows you the CSS behind an element. That's what CSS Peek does - it makes finding styles super fast.
+
+* Understand Styles :
+- When you want to know how something looks so great, CSS Peek lets you see it's styles. It's like looking behind the scenes of a movie.
+
+
+2. Color Highlight :
+
+* Color Magic :
+- Color Highlight makes your color codes burst with real colors as you type them.
+
+* Instant Visuals :
+- Imagine typing "blue" and seeing a blue shade. That's what Color Highlight does!
+
+* Design Bliss :
+- When you are coding styles for your websites, colors matter a lot. Color Highlights lets you use and visualize them instantly.
+
+
+3. Image Preview :
+
+* Visual Boost :
+- Image Preview works like a magical window that shows images right where you are coding.
+
+* No Extra Steps :
+- Instead of opening images elsewhere, Image Preview brings them to you within your code editor.
+
+* Web Design Help :
+- When you are creating websites, images are like puzzle pieces. Image Preview helps you fit them perfectly into your design.
+
+
+4. HTML CSS Support :
+
+* Smart Completion :
+- It suggests and completes HTML id and class names as you type, preventing mistakes.
+
+* Stylesheet Help :
+- Whether it's linked or embedded styles, this extension has your back.
+
+* Multi-Stylesheet Support :
+- Juggling multiple stylesheets? HTML CSS Support handles it like a pro.
+
+* Languages Covered :
+- It's not just for HTML - other HTML-like languages are supported too.
+
+* Validation Check :
+- Validate your CSS selectors for accuracy whenever you need.
+
+
+5. HTML to CSS autocompletion :
+
+* Smart Suggestions :
+- This clever helper, when you are typing HTML class names, suggests CSS class names you have used before.
+
+* Error Prevention :
+- By suggesting class names you have already used, it helps you avoid typos and errors.
+
+* Consistent Styles :
+- HTML to CSS autocompletion ensures that your website's style stay the same across your code.
+
+
+6. Stylelint :
+
+* Coding Police :
+- Stylelint checks your code for errors and style issues, making sure your code follows the rules.
+
+* Highlighting Mistakes :
+- It points out mistakes with flashy lights, so you can easily see what needs fixing.
+
+* Code Excellence :
+- By enforcing coding standards, Stylelint helps your code look clean, professional, and consistent.
+
+
+# HTML Comments :
+
+- Comments are useful when you want to write something about the code but you do not want to run that or show in the output.
+- Comments are basically for humans, you write commands for your future self or for other developers who might work on the same codebase.
+- The syntax to create a single-line comment and a multi-line comment are both similar.
+
+# HTML comments serve various purposes, including :
+
+* Documentation :
+- Developers often use comments to explain the purpose or functionality of certain code blocks, making it easier for themselves or others to understand the codebase.
+
+* Debugging :
+- Comments can help in troubleshooting or temporarily disabling sections of code for testing purposes without deleting them.
+
+* Reminder :
+- Comments can act as reminders for future modifications or improvements of the code.
+
+* Work In Progress :
+- Comments can mark unfinished sections or indicate that certain code is under development.
+
+* In HTML we can create a "comment" as shown below and the browser will not display that on the screen, to write a comment between; <!-- -->,
+- Example :
+
+-----------------------------------------
+
+<!-- This is a comment, is used for single-line as well as multi-line -->
+
+-----------------------------------------
+
+* Best Practices :
+- Use comments sparingly.
+- Do not write the obvious in the comments. Ex - Do not write : 
+<!-- This is a div tag, or this is a p tag -->
+- Explain why you did what you did.
+- If it is an expression, then write the output.
+- Use comments to document a piece of code, but do not just rely on comments for documentation.
+
+---------------------------------------------------------------------------------------------------
