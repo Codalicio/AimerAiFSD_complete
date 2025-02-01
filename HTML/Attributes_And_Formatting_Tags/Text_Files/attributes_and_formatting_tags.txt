@@ -85,3 +85,146 @@ Answer) -
 - You can customize other elements as well, such as paragraphs, links, images, and more, by applying the style attribute with appropriate CSS rules.
 
 
+-----------------------------------------------------------------------------------------------------
+
+# Understanding Formatting Tags :
+
+- Formatting tags in HTML are used to style text and change its appearance.
+- By using formatting tags, you can enhance the visual presentation of your content and make it stand out.
+
+* Here are some commonly used formatting tags in HTML :
+
+1. Bold (<b>) :
+- The <b> tag is a non-semantic tag used to make the enclosed text appear in a bold font-weight.
+- For example :
+
+--------------------------------------------------
+
+<p>This is a <b>paragraph</b>.</p>
+
+--------------------------------------------------
+
+2. Strong (<strong>) :
+- The strong tag is a semantic tag used to indicate strong importance or emphasis.
+- For example :
+
+---------------------------------------------------------------
+
+<p>This is a <strong>important emphasized</strong> word.</p>
+
+---------------------------------------------------------------
+
+3. Italic <i> Tag :
+- The <i> tag makes text italic.
+- For example :
+
+-----------------------------------------
+
+<p>This text is in <i>italics</i>.</p>
+
+-----------------------------------------
+
+4. Emphasis <em> Tag :
+- The <em> tag emphasizes text, typically displayed in italic.
+- It has semantic meaning, indicating stress emphasis.
+- For example :
+
+----------------------------------------------------------
+
+<p>He was on the ship named - <em>The Titanic</em>.</p>
+
+---------------------------------------------------------
+
+5. Mark Tag <mark> :
+- The <mark> tag is a non-semantic tag used to highlight or mark specific sections of text within the content.
+- It is typically rendered with a background-color to visually distinguish the marked text.
+- This tag is useful for drawing attention to important or relevant information, such as search terms or key findings within a document.
+- For example :
+
+----------------------------------------------------------------------------------------------
+
+<p> This text will stand out as it has a <mark>background-color</mark> attached to it.</p>
+
+---------------------------------------------------------------------------------------------
+
+6. Small Tag <small> :
+- The <small> tag is a non-semantic tag used to decrease the font-size of the enclosed text, making it appear smaller than the surrounding text.
+- It is often used to indicate secondary or fine-print information, such as disclaimers, copyright notices, or footnotes.
+- For example :
+
+--------------------------------------------------------------------------
+
+<p>This is some <small>smaller text</small> within a paragraph.</p>
+
+--------------------------------------------------------------------------
+
+7. <del> Tag :
+- The <del> tag is a non-semantic tag used to indicate deleted or removed text within the content.
+- It typically renders the enclosed text with a strike-through line.
+- This tag is useful for displaying edited or outdated content, highlighting revisions, or presenting alternative information.
+- for example :
+
+---------------------------------------------------------
+
+<p>This is an <del>old</del> new text.</p>
+
+---------------------------------------------------------
+
+8. <ins> Tag :
+- The <ins> tag is a non-semantic tag used to indicate inserted or added text within the content.
+- It typically underlines the enclosed text to visually distinguish it as new or recently added.
+- This tag is often used in collaborating editing environments, version control systems, or when presenting changes or updates.
+- For example :
+
+-----------------------------------------------
+
+<p>This is an <ins>inserted</ins> text.</p>
+
+-----------------------------------------------
+
+9. Subscript Tag <sub> :
+- The <sub> tag is a non-semantic tag used to render text as subscript, positioning it slightly below the normal text baseline.
+- It is commonly used for displaying chemical formulas, mathematical equations, or footnotes.
+- It is particularly useful for denoting subscripts or smaller characters in mathematical or scientific notations.
+- For example :
+
+----------------------------------------------
+
+<p>H<sub>2</sub>O</p>
+
+----------------------------------------------
+
+10. Superscript <sup> Tag :
+- The <sup> tag is a non-semantic tag used to render text as superscript, positioning it slightly above the normal text baseline.
+- It is often used for displaying exponents, mathematical notations, or footnotes.
+- It is particularly useful for denoting superscripts or smaller characters in mathematical or scientific notations.
+- For example :
+
+----------------------------------------------
+
+<p>2<sup>3</sup>=8 or E=MC<sup>2</sup></p>
+
+----------------------------------------------
+
+11. <s> Tag :
+- The <s> tag is a non-semantic tag used to render text with a strike-through line, indicating that it is no longer valid, relevant, or accurate.
+- It is typically used for displaying content that has been deprecated, crossed out, or should be ignored.
+- For example :
+
+-------------------------------------------------------------
+
+<p>This is <relevant>no longer relevant</s> information.</p>
+
+--------------------------------------------------------------
+
+12. <big> Tag (Deprecated):
+- The <big> tag, although part of earlier HTML versions, is no longer recommended for use as it has been deprecated.
+- It was used to increase the font-size of the enclosed text, making it larger than the surrounding text. Instead it is recommended to use CSS(Cascading Style Sheets) to control font sizes and achieve the desired visual effects.
+- For Example :
+
+-----------------------------------------------------------
+
+<p>This is <big>large text</big> within a paragraph.</p>
+
+-----------------------------------------------------------
+
