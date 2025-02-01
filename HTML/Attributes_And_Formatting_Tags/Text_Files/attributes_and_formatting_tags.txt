@@ -265,7 +265,53 @@ Answer) -
 - If an element takes up only the required horizontal space and lets another inline element sit next to it then it is an inline element.
 - For example :
 
----------------------------------------------------------------------
+--------------------------------------
 
+<body>
+    <span>First span,</span>
+    <span>Second span,</span>
+    <span>Third span</span>
+</body>
 
+--------------------------------------
+
+- In the example code above, we can see that we have 3 span elements placed inside the body with some content in them, if we run this in the browser, then, we will see that the 3 of them are sitting next to each other. Which shows that span is indeed an inline element.
+
+* Block Elements :
+- This is the opposite of inline elements. Block-level elements take up the entire horizontal space even if it is not required.
+- For example :
+
+----------------------------------------
+
+<body>
+    <div>First div,</div>
+    <div>Second div,</div>
+    <div>Third div.</div>
+</body>
+
+----------------------------------------
+
+- In the example code above, we can see that we have 3 div elements placed inside the body with some content inside them, if we run this in the browser, we will see that the 3 of them are displayed on a line each. With this, we can say div is a block-level element.
+
+* You must be wondering, what happens if we have an inline element and a block element next to each other.
+- Let's see :
+
+------------------------------------------
+
+<body>
+    <span>Inline Element : span,</span>
+    <div>Block Element : div,</div>
+    <div>Block Element : div,</div>
+</body>
+
+-----------------------------------------
+
+- So, they look exactly like the previous example, which shows a block element will always sit in a new line.
+Question) - Now are they any ways to make inline element sit inline with block elements as siblings?
+Answer) - In short, yes we can change their behavior using the CSS display property.
+
+* Note :
+- The above question is a very important question as it a high chance to be asked during the interviews.
+
+-------------------------------------------------------------------------------------------------
 
