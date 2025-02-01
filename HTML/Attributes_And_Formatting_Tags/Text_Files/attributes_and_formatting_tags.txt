@@ -1,0 +1,87 @@
+--------------------------------------------------------------------------------------------------
+
+# TOPIC - HTML : Getting Started With HTML
+
+--------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------
+
+# HTML Attributes and Formatting Tags :
+
+Question) - What are HTML Attributes?
+Answer) - 
+- In HTML, attributes provide additional information or modify the behavior of HTML elements.
+- They are used to enhance the functionality and appearance of elements within an HTML document.
+- Attributes are specified within the opening tag of an HTML elements and consist of a "name-value" pair.
+
+* Syntax for an HTML attribute :
+
+- <tagname attribute_name="attribute_value">
+
+* tagname :
+- tagname represents the HTML element to which the attribute is applied.
+
+* attribute_name :
+- attribute_name refers to the specific attribute being used.
+
+* attribute_value :
+- attribute_value specifies the value associated with the attribute.
+
+# Type of Attributes :
+
+# There are two types of attributes :
+
+1. Global Attributes :
+- Global Attributes can be used with any HTML element.
+- They provide common functionalities and properties that apply universally across different elements.
+
+# Some commonly used global attributes include :
+
+* class :
+- Specifies one or more CSS classes to be applied to the element.
+
+* id :
+- Provides a unique identifier for an element.
+
+* style :
+- Define inline CSS styles to be applied to the element.
+
+* title :
+- Specifies additional information about the element(often displayed as a tooltip).
+
+* data-* :
+- Allows the addition of custom data attributes for JavaScript or CSS usage.
+
+2. Specific Attributes :
+- They are designed to serve specific purposes and are only applicable to their corresponding elements.
+
+# Examples of specific attributes include :
+
+* href (anchor tag <a>) :
+- Defines the URL or destination of a hyperlink.
+
+* src (image tag <img>) :
+- Specifies the source URL of an image.
+
+* value (input tag <input>) :
+- Sets the initial value for an input field.
+
+* disabled (various tags) :
+- Disables the functionality of an element.
+
+# Style Attributes :
+- The style attribute allows you to apply CSS(Cascading Style Sheets) directly to HTML elements. CSS is a language that describes how HTML elements should be displayed on the screen.
+- It provides a wide range of properties and values that you can use to control the appearance of elements.
+- To use the style attribute, you simply add it to an HTML tag, specifying the desired CSS rules within quotation marks. These rules consist of property-value pairs, where properties define the aspect of an element you want to change, and values determine how that change should be applied.
+
+* For example, let's consider a heading <h1> tag that you want to style. You can use the style attribute to change its color, font-size and alignment. Here's an example :
+
+----------------------------------------------------------------------------------------------
+
+<h1 style:"color:red; font-size:2rem; text-align:center;">This is a styled Heading</h1>
+
+----------------------------------------------------------------------------------------------
+
+* Note :
+- You can customize other elements as well, such as paragraphs, links, images, and more, by applying the style attribute with appropriate CSS rules.
+
+
