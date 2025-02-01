@@ -228,3 +228,44 @@ Answer) -
 
 -----------------------------------------------------------
 
+
+# Categories of Elements :
+
+- In HTML, elements are categorized as either inline or block elements, which determines how they behave and interact with other elements in terms of layout and formatting. There are also some vertical margins and other CSS differences between these two!
+
+# Most commonly used inline and block level elements :
+
+* Inline Level Elements :
+span
+a
+strong
+em
+img
+input
+
+* Block Level Elements :
+div
+main
+section
+article
+p
+(h1 - h6) all heading tags
+ul
+li
+table
+form
+
+- The above tags are most commonly used ones, there are many more tags apart from those!
+
+# Inline Element VS Block Level Element :
+
+Question) - What is the difference between an inline or block element?
+Answer) -
+* Inline Elements :
+- If an element takes up only the required horizontal space and lets another inline element sit next to it then it is an inline element.
+- For example :
+
+---------------------------------------------------------------------
+
+
+
