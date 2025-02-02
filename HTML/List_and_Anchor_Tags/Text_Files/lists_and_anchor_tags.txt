@@ -234,3 +234,176 @@
 
 ---------------------------------------------------------
 
+
+# Anchor Tag <a> :
+
+- An Anchor Tag in HTML is represented by the <a> element and is used to create hyperlinks within a web page.
+- It allows you to link to other web pages, files, sections within the same page, email addresses and more.
+- The anchor <a> tag is one of the fundamental elements for linking and navigation in HTML.
+
+* Syntax :
+
+--------------------------------------------
+
+<a href="URL">Link Text</a>
+
+---------------------------------------------
+
+# The most commonly used attributes with the anchor tag are :
+
+* href
+* target
+* rel
+
+1. href (HyperText Reference) :
+- It specifies the destination URL or target of the link.
+- For example :
+
+-------------------------------------------------------
+
+<a href="https://www.aimerz.ai">Visit Aimerz Website</a>
+
+-------------------------------------------------------
+
+- With this, a link will be created on the text "Visit Aimerz Website" and on clicking on this text, the user will be redirected to "aimerz.ai" in the same tab.
+
+2. target :
+- It specifies where the linked document should be displayed.
+
+# Different values of "target" attribute for <a> :
+
+* _self :
+- This is the default value, if we do not specify any target attribute. This means open the link in the same window.
+- For example :
+
+--------------------------------------------------------------
+
+<a ;href=:"https://www.aimerz.ai" target="_self">Aimerz</a>
+
+--------------------------------------------------------------
+
+* _blank :
+- If we use "_blank", this means open the link in a new tab.
+- For example :
+
+---------------------------------------------------------------------
+
+<a href="https://www.google.com" target="_blank">Visit Google</a>
+
+----------------------------------------------------------------------
+
+* _parent :
+- If we use _parent, this will open the link in the parent browsing context of the current one.
+* Note :
+- If no parent context, then it behaves as "_self".
+- For example :
+
+----------------------------------------------------------------------
+
+<iframe 
+        width="300" 
+        height="150" 
+        style="border:3px solid green; padding:30px 0 0 30px;" 
+        srcdoc="<a href='https://www.wikipedia.com' target='_parent'>Visit Wikipedia</a>"
+    >
+</iframe>
+
+-----------------------------------------------------------------------
+
+- In the example above, we have an iframe and a target _parent attribute, when you click on Wikipedia, the link will open outside the frame, if there was no _parent, then it would open inside the iframe.
+
+* _top :
+- It will open the link in the topmost browsing context(the "highest" context that's an ancestor of the current one). If there are no ancestors, it behaves as _self.
+- For example :
+
+--------------------------------------------------------------------------------------------
+
+<iframe 
+        width="300" 
+        height="150" 
+        style="border:3px solid green; padding:30px 0 0 30px;" 
+        srcdoc="<a href='https://www.wikipedia.com' target='_top'>Visit Wikipedia</a>"
+    >
+</iframe>
+
+--------------------------------------------------------------------------------------------
+
+- This unlike the _parent will move to the outermost section which is the browser and will replace the page.
+
+* Example :
+- If we are in an online editor where the left hand side has the editor and the right hand side has output preview, using _top will replace the entire page with the destination URL.
+This is the biggest difference between _parent and _top,_parent will replace the parent whereas _top will replace it from the browser window.
+
+* target="framename" :
+- target attribute of <a> tag with "framename" as value will open the linked page in the specified <frame>.
+- For example :
+
+----------------------------------------------------------------------------------
+
+<a href="https://www.aimerz.ai" target="display-frame">visit aimerz.ai</a>
+<iframe
+    style="width:100%; height:600px; border:3px solid #f50909"
+    name="display-frame"
+>
+</iframe>
+
+-----------------------------------------------------------------------------------
+
+3. rel :
+- rel specifies the relationship between the linked document and the current document.
+- It provides additional information about the link.
+- Common values include nofollow, noopener, noreferrer, stylesheet, icon, and custom values.
+
+* rel="nofollow" :
+- Indicates to search engines that they should not follow the link or pass any ranking authority to the linked page.
+- For example :
+
+------------------------------------------------------------------------------
+
+<a href="https://www.aimerz.ai" rel="nofollow">aimerz</a>
+
+------------------------------------------------------------------------------
+
+* rel="noopener" or rel="noreferrer" :
+- These values are used to enhance security when opening links in a new tab or window, preventing the newly opened page from accessing the "window.opener" object of the originating page.
+- For example :
+
+--------------------------------------------------------------------------------
+
+<a href="https://www.aimerz.ai" rel="noreferrer>aimerz</a>
+
+-------------------------------------------------------------------------------
+
+
+* Note :
+- When we use target="_blank", the default behavior for rel is noreferrer.
+- For example :
+
+---------------------------------------------------------------------------------
+
+<a href="https://www.aimerz.ai" target="_blank">aimerz</a>
+
+--------------------------------------------------------------------------------
+
+* rel="stylesheet" :
+- Specifies that the linked document is a style sheet used to define the visual presentation of the current document.
+- This is one of the most common and important ones out there that we will see when using external stylesheets. 
+- Mostly you will see this in your <head> tag.
+-For example :
+
+-----------------------------------------------------------------------------------
+
+<link href="./styls/styles.css" rel="stylesheet">
+
+-----------------------------------------------------------------------------------
+
+* rel="icon" :
+- Specifies that the linked document is an icon or image to be used as the website's favicon(a small icon displayed in the browser's tab or bookmark).
+- For example :
+
+--------------------------------------------------------------
+
+<link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+--------------------------------------------------------------
+
