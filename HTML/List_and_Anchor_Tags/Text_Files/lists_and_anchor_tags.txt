@@ -407,3 +407,85 @@ This is the biggest difference between _parent and _top,_parent will replace the
 
 --------------------------------------------------------------
 
+# HTML Classes and Id :
+
+- HTML classes and ids are attributes used to identify or group elements within an HTML document uniquely.
+- They provide a way to target and style specific elements or apply JavaScript functionality.
+
+# Here's an overview of HTML Classes and IDs :
+
+* HTML Classes :
+
+- THe class attribute assigns one or more class names to an HTML element.
+- Classes allow multiple elements to share the same styling or behavior.
+- Multiple classes can be assigned to an element by separating them with spaces.
+- Classes are defined in CSS stylesheets to apply specific styles to the elements with those class names.
+
+- Example - 1 :
+
+--------------------------------------------------------------
+
+<div class="container">
+    <h1 class="heading">Aimerz!</h1>
+    <p class="content">Pure Hardwork, no shortcuts!</p>
+</div>
+
+-------------------------------------------------------------
+
+- Example - 2 :
+
+--------------------------------------------------------------
+
+<div class="container">
+    <h1 class="heading">Aimerz!</h1>
+    <span class="content">Pure Hardwork</span>
+    <span class="content">, No Shortcuts!</span>
+</div>
+
+---------------------------------------------------------------
+
+- The example code above, show how to add class names to the HTML tags.
+
+* Note :
+- We can write any class name but it is better to write meaningful class names that represent the use case of that class.
+- Notably, we can give any number of classes to an element and the order of the classes basically does not matter.
+
+# HTML ID :
+
+- The id attribute is used to give a unique identifier to an HTML element.
+- Each id must be unique within the HTML document.
+- IDs are primarily used for targeting specific elements with CSS or JavaScript.
+- IDs are often used when you want to apply specific styling or perform targeted actions on a single element.
+
+* Example :
+
+----------------------------------------------------------------------
+
+<div id="container">
+    <h1 id="heading">Aimerz!</h1>
+    <p id="content">Pure Hardwork, No Shortcuts!</p>
+</div>
+
+-----------------------------------------------------------------------
+
+* Note :
+- Similar to classes, we can give any number of IDs to an element and the order of the IDs basically does not matter but make sure they are unique.
+
+* Example :
+
+------------------------------------------------------------------------
+
+<div id="container">
+    <h1 id="heading">Aimerz!</h1>
+    <p id="content tagline">Pure Hardwork, No Shortcuts!</p>
+</div>
+
+------------------------------------------------------------------------
+
+# Tips :
+
+* Use ID for uniquely targeting the element via JavaScript, or giving the element some unique style, since ID must not be reused.
+* Use classes when you want to give a generic style to elements since classes can be reused.
+
+--------------------------------------------------------------------------------------------------
+
