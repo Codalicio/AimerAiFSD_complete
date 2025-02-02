@@ -126,3 +126,94 @@ Introduction to HTML Media :
 
 ---------------------------------------------------------------------------------------------------------
 
+# Audio :
+
+* Audio Tag <audio> :
+
+- The <audio> tag includes audio on our web page.
+- <audio> tag is introduced in HTML5.
+
+* Syntax :
+
+<audio src="audio.mp3" controls />
+
+- Here, the src attribute cab be a URL of an audio file, and the control attribute enables play, pause, and volume controls.
+
+* Example - Embed an audio :
+
+------------------------------------------------------------
+
+<audio controls src="https://commondatastorage.googleapis.com/codeskulptor-demos/pyman_assets/ateapill.ogg"></audio>
+
+-------------------------------------------------------------
+
+- If you click on 3 dots, it will show options to download and set playback speed.
+
+# Audio Tag Attributes :
+
+1. src :
+- This attribute specifies the source URL (Uniform Resource Locator) of the audio file that should be played.
+
+2. controls :
+- When this attribute is present, it displays the default audio controls, such as play, pause, and volume, allowing users to interact with the audio player.
+
+3. autoplay :
+- When this attribute is present, the audio will start playing automatically when the page loads.
+
+4. loop :
+- The audio will loop and play repeatedly when this attribute is present.
+
+5. preload :
+- This attribute specifies how the audio file should be preloaded for a better user experience.
+- It can have value like :
+    * auto - Loads the audio file automatically, even if the user does not require it immediately.
+    * metadata - Loads only the metadata of the audio file(e.g. length of the audio file).
+    * none - does not preload the audio file.
+
+6. controlslist :
+- This attribute specifies the controls that should be displayed in the audio player's controls.
+- It can have values like :
+    * nodownload - disable download button.
+    * nofullscreen - disable fullscreen button.
+    * nodownload nofullscreen - disable both download and fullscreen buttons.
+
+- Example :
+
+----------------------------------------------------------------
+
+<audio controls src="https://commondatastorage.googleapis.com/codeskulptor-demos/pyman_assets/ateapill.ogg" controlsList="nodownload nofullscreen"></audio>
+
+----------------------------------------------------------------
+
+7. muted :
+- When this attribute is present, the audio will be muted by default.
+- Example :
+
+-------------------------------------------------------------------
+
+<audio controls src="https://commondatastorage.googleapis.com/codeskulptor-demos/pyman_assets/ateapill.ogg" muted></audio>
+
+-------------------------------------------------------------------
+
+# Audio with multiple sources :
+
+- Not all browsers or devices support the some file format, and using multiple <source> tags allow the browser to choose the best-suited file format that it can play.
+
+* To specify multiple sources, we use <source> tags within <audio> tag. Each <source> tag has a type attribute, which identifies the format of the audio file.
+
+- Example :
+
+-------------------------------------------------------------------
+
+<audio controls>
+    <source src="https://commondatastorage.googleapis.com/codeskulptor-demos/pyman_assets/ateapil1ogg" type="audio/mp3; codecs=opus" />
+    <source src="https://commondatastorage.googleapis.com/codeskulptor-demos/pyman_assets/ateapillogg" type="audio/mp3; codecs=vorbis" />
+    <source src="https://codeskulptor-demos.commondatastorage.googleapis.com/pang/paza-moduless.mp3"type="audio/mp3"/>
+</audio>
+
+--------------------------------------------------------------------
+
+- The browser will try to play the first file format specified in the <source> tag, and if it cannot play it, it will try the next one, until it finds a compatible file format.
+
+----------------------------------------------------------------------------------------------------
+
