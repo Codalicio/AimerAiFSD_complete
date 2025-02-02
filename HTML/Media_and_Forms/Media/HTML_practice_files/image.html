@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Images</title>
+</head>
+<body>
+    <!-- Image : <img> tag -->
+    <h1>Heading</h1>
+    <p>This is a random photo</p>
+    <img src="https://picsum.photos/200" alt="random image">
+    <hr>
+    <!-- Broken Image with alt attribute -->
+    <h1>Heading</h1>
+    <p>This is a random photo.</p>
+    <img src="broken-image.jpg" alt="img alt text">
+    <hr>
+    <!-- <img /> : width and height attr. -->
+    <img src="./Images/Amit raj_photo.jpg" alt="Amit's Pic" width="200" height="180">
+    <hr>
+    <!-- <img /> : loading attr. -->
+    <img src="./Images/Amit raj_photo.jpg" width="300" height="300" loading="lazy" alt="Amit Raj's Profile Pic">
+    <hr>
+    <!-- <picture> element -->
+    <!-- Needs to be edited/visited -->
+    <picture>
+        <source srcset="https://cdn.pixabay.com/photo/2023/07/30/11/spider-8158656_1280.jpg" media="(min-width:700px)" />
+        <source srcset="https://cdn.pixabay.com/photo/2023/07/30/10/dragonfly-8105988_1280.jpg" media="(min-width:450px)" />
+        <img src="https://picsum.photos/200" alt="My Pic" width="300" height="300" loading="lazy" />
+    </picture>
+    <hr>
+</body>
+</html>
