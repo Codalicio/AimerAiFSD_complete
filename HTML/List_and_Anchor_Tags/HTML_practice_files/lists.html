@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Lists</title>
+</head>
+<body>
+    <!-- Unordered List -->
+     <ul>
+        <li>List Item 1</li>
+        <li>List Item 2</li>
+        <li>List Item 3</li>
+        <li>List Item 4</li>
+     </ul>
+     <hr>
+     <!-- Nested Unordered Lists -->
+     <!-- type="disc" is the default in <ul> -->
+    <ul type="disc">
+        <li>List Item 1</li>
+        <li>List Item 2</li>
+        <li>List Item 3</li>
+        <ul type="circle">
+            <li>List Item 3.1</li>
+            <li>List Item 3.2</li>
+            <ul type="square">
+                <li>List Item 3.2.1</li>
+                <li>List Item 3.2.2</li>
+            </ul>
+        </ul>
+    </ul>
+    <hr>
+    <!-- type attribute for <li> tag of <ul> tag -->
+    <ul>
+        <li type="disc">List Item 1</li>
+        <li type="circle">List Item 2</li>
+        <li type="square">List Item 3</li>
+    </ul>
+    <hr>
+    <!-- Ordered List -->
+    <ol>
+        <li>List Item 1</li>
+        <li>List Item 2</li>
+        <li>List Item 3</li>
+    </ol>
+    <hr>
+    <!-- Nested Ordered List -->
+    <ol>
+        <li>List Item 1</li>
+        <li>List Item 2</li>
+        <li>List Item 3</li>
+        <li>List Item 4</li>
+        <ol>
+            <li>List Item 4.1</li>
+            <li>List Item 4.2</li>
+            <ol>
+                <li>List Item 4.2.1</li>
+                <li>List Item 4.2.2</li>
+            </ol>
+        </ol>
+    </ol>
+    <hr>
+    <!-- Order list with "start" attribute -->
+    <ol start="8">
+        <li>List Item 1</li>
+        <li>List Item 2</li>
+        <li>List Item 3</li>
+        <ol start="13">
+            <li>List Item 1</li>
+            <li>List Item 2</li>
+            <li>List Item 3</li>
+            <ol start="23">
+                <li>List Item 1</li>
+                <li>List Item 2</li>
+                <li>List Item 3</li>
+            </ol>
+        </ol>
+    </ol>
+    <hr>
+    <!-- Change the style of the number of <ol> using "type" attribute -->
+    <ol type="A" start="5">
+        <li>List Item 1</li>
+        <li>List Item 2</li>
+        <li>List Item 3</li>
+        <li>List Item 4</li>
+        <ol type="a">
+            <li>List Item 1</li>
+            <li>List Item 2</li>
+            <li>List Item 3</li>
+            <li>List Item 4</li>
+            <ol type="I" start="5">
+                <li>List Item 1</li>
+                <li>List Item 2</li>
+                <li>List Item 3</li>
+                <li>List Item 4</li>
+                <ol type="i">
+                    <li>List Item 1</li>
+                    <li>List Item 2</li>
+                    <li>List Item 3</li>
+                    <li>List Item 4</li>
+                    <ol>
+                        <li>List Item 1</li>
+                        <li>List Item 2</li>
+                        <li>List Item 3</li>
+                        <li>List Item 4</li>
+                    </ol>
+                </ol>
+            </ol>
+        </ol>
+    </ol>
+    <hr>
+    <!-- Description List -->
+    <dl>
+        <dt>Definition Term 1</dt>
+        <dd>Definition Description 1</dd>
+        <dt>Definition Term 2</dt>
+        <dd>Definition Description 2</dd>
+    </dl>
+    <hr>
+    <dl>
+        <dt>Definition Term 1</dt>
+        <dd>Definition Description 1</dd>
+        <dd>Definition Description 2</dd>
+        <dt>Definition Term 2</dt>
+        <dd>Definition Description 1</dd>
+    </dl>
+</body>
+</html>
