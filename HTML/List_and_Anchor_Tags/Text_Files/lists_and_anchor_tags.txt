@@ -1,0 +1,236 @@
+--------------------------------------------------------------------------------------------------
+
+# TOPIC - HTML : Getting Started With HTML
+
+--------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------
+
+# List and Anchor Tags :
+
+# List :
+- In HTML, a list is a structured way to present a collection of related items.
+- Lists are commonly used to organize and display information in a structured and a readable format.
+- HTML provides several tags specifically designed for creating different types of lists.
+
+# The main types of lists in HTML are :
+
+* ul
+* ol
+* dl
+
+# Explain each type of lists with examples :
+
+* ul :
+- ul stands for an unordered list, which means every list item will have a bullet point/disc in front of it.
+-For example :
+
+--------------------------------------
+
+<body>
+     <ul>
+        <li>List Item 1</li>
+        <li>List Item 2</li>
+        <li>List Item 3</li>
+        <li>List Item 4</li>
+     </ul>
+</body>
+
+-------------------------------------
+
+- In the above example code, you see every list item is displayed with a bullet point/disc in front of it. This indicates it is an unordered list.
+
+* You can also nest the list inside another list :
+- For example :
+
+----------------------------------------------
+
+<body>
+    <!-- Nested Unordered Lists -->
+     <!-- type="disc" is the default in <ul> -->
+    <ul type="disc">
+        <li>List Item 1</li>
+        <li>List Item 2</li>
+        <li>List Item 3</li>
+        <ul type="circle">
+            <li>List Item 3.1</li>
+            <li>List Item 3.2</li>
+            <ul type="square">
+                <li>List Item 3.2.1</li>
+                <li>List Item 3.2.2</li>
+            </ul>
+        </ul>
+    </ul>
+</body>
+
+------------------------------------------------
+
+* We have "type" attribute also available on the <ul> tag but it is not to be used anymore as it has been deprecated. We can achieve the same by using CSS. But for reference let us look at them :
+
+* disc :
+- This is the default behavior as we have seen in the previous example.
+
+* circle :
+- This is almost similar to disc but is unfilled.
+
+* square :
+- This makes the shape of the bullet points a filled square like icon.
+
+* Note :
+- There is also a "triangle", but not all the browsers support it.
+
+# Similar to <ul> tag the <li> tag also supports "type" attribute with the following values :
+
+* type="disc"
+* type="circle"
+* type="square"
+
+- For example :
+
+----------------------------------------------
+<body>
+    <ul>
+        <li type="disc">List Item 1</li>
+        <li type="circle">List Item 2</li>
+        <li type="square">List Item 3</li>
+    </ul>
+</body>
+
+-----------------------------------------------
+
+* Note :
+- As these technologies evolved, it was decided that all styling should be handled by CSS, leading to the deprecation of certain attributes in both the <ul> and <li> tags.
+
+* ol :
+- ol stands for ordered list, which means every list item will have a number in front of it by default.
+- For example :
+
+------------------------------------------------
+
+<body>
+    <ol>
+        <li>List Item 1</li>
+        <li>List Item 2</li>
+        <li>List Item 3</li>
+    </ol>
+</body>
+
+-------------------------------------------------
+
+* We can also nest the list inside another list, for example :
+
+--------------------------------------------------
+
+<body>
+    <ol>
+        <li>List Item 1</li>
+        <li>List Item 2</li>
+        <li>List Item 3</li>
+        <li>List Item 4</li>
+        <ol>
+            <li>List Item 4.1</li>
+            <li>List Item 4.2</li>
+            <ol>
+                <li>List Item 4.2.1</li>
+                <li>List Item 4.2.2</li>
+            </ol>
+        </ol>
+    </ol>
+</body>
+
+---------------------------------------------------
+
+* We also have a "start" attribute, which we can use to define the start number, for example :
+
+--------------------------------------------------
+
+<body>
+    <!-- Order list with "start" attribute -->
+    <ol start="8">
+        <li>List Item 1</li>
+        <li>List Item 2</li>
+        <li>List Item 3</li>
+        <ol start="13">
+            <li>List Item 1</li>
+            <li>List Item 2</li>
+            <li>List Item 3</li>
+            <ol start="23">
+                <li>List Item 1</li>
+                <li>List Item 2</li>
+                <li>List Item 3</li>
+            </ol>
+        </ol>
+    </ol>
+</body>
+
+-----------------------------------------------------
+
+* There is another handy attribute called "type", which lets us change the numbering style of the items list, like :
+
+* type="1"
+* type="A" = This will change the numbers to capital - "A", "B", "C", "D", ..., "Z".
+* type="a" = This will change the numbers to small - "a", "b", "c", "d", ..., "z".
+* type="I" = This will change the numbers to capital - "Roman Numerals".
+* type="i" = This will change the numbers to small - "Roman Numerals".
+* type="1" - It is the default one.
+
+* For example :
+
+-----------------------------------------------------
+
+<body>
+    <!-- Change the style of the number of <ol> using "type" attribute -->
+    <ol type="A" start="5">
+        <li>List Item 1</li>
+        <li>List Item 2</li>
+        <li>List Item 3</li>
+        <li>List Item 4</li>
+        <ol type="a">
+            <li>List Item 1</li>
+            <li>List Item 2</li>
+            <li>List Item 3</li>
+            <li>List Item 4</li>
+            <ol type="I" start="5">
+                <li>List Item 1</li>
+                <li>List Item 2</li>
+                <li>List Item 3</li>
+                <li>List Item 4</li>
+                <ol type="i">
+                    <li>List Item 1</li>
+                    <li>List Item 2</li>
+                    <li>List Item 3</li>
+                    <li>List Item 4</li>
+                    <ol>
+                        <li>List Item 1</li>
+                        <li>List Item 2</li>
+                        <li>List Item 3</li>
+                        <li>List Item 4</li>
+                    </ol>
+                </ol>
+            </ol>
+        </ol>
+    </ol>
+</body>
+
+--------------------------------------------------------
+
+3. dl :
+- dl stands for Definition List.
+- It represents a list of terms and their corresponding definitions.
+- Definition Lists consists of <dt> (Definition Term) and <dd> (Definition Description) pairs.
+- For example :
+
+-------------------------------------------------------
+
+<body>
+    <!-- Description List -->
+    <dl>
+        <dt>Definition Term 1</dt>
+        <dd>Definition Description 1</dd>
+        <dd>Definition Description 2</dd>
+        <dt>Definition Term 2</dt>
+        <dd>Definition Description 1</dd>
+    </dl>
+</body>
+
+---------------------------------------------------------
+
