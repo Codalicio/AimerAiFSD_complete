@@ -217,3 +217,92 @@ Introduction to HTML Media :
 
 ----------------------------------------------------------------------------------------------------
 
+# Video :
+
+* Video tag <video> :
+- The <video> tag embeds a video player into our HTML webpage.
+- <video> tag was introduced in HTML5.
+
+* Syntax :
+
+- <video src="video.mp4" controls></video>
+
+- Here, the src attribute can be a URL of a video file, and the controls attribute enables play, pause, and volume controls.
+
+* Example - Embed a video :
+
+-------------------------------------------------------------------------------
+
+<video src="./Videos/hello_video.mp4" controls width="500"></video>
+
+--------------------------------------------------------------------------------
+
+# <video> - Video tag Attributes :
+
+1. src :
+- The src attributes specifies the source URL(Uniform Resource Locator) of the video file that should be played.
+
+2. controls :
+- When the controls attribute is present, it displays the default video controls, such as play, pause, and seek, allowing users to interact with the video player.
+
+3. autoplay :
+- When this attribute is present, the video will start playing automatically when the page loads.
+
+4. loop :
+- The video will loop and play repeatedly when this attribute is present.
+
+5. preload :
+- This attribute specifies how the video file should be preloaded.
+- It can have values like :
+    * auto - loads the video file automatically, even if the user does not require it immediately.
+    * metadata - loads only the metadata(e.g. length of the video file).
+    * none - does not preload the video.
+
+6. width and height :
+- These attributes specify the width and height of the video player in pixels.
+- For example :
+
+----------------------------------------------------------------------------
+
+<video src="./Videos/hello_video.mp4" controls width="500" height="400"></video>
+
+----------------------------------------------------------------------------
+
+* Note :
+- Initially, attributes like width and height were preferred to use, but later when CSS came, styles were separated from HTML for better code clarity and separation of concerns.
+
+7. poster :
+- This attribute specifies an image URL that should be displayed as a poster frame before the video starts playing.
+- For example :
+
+----------------------------------------------------------------------------------
+
+<video src="./Videos/hello_video.mp4" poster="./Images/Amit raj_photo.jpg" controls width="500" height="400"></video>
+
+----------------------------------------------------------------------------------
+
+8. controlslist :
+- This attribute specifies the controls that should be displayed in the video player's controls.
+- It can have values like :
+    * nodownload - disables the download button.
+    * nofullscreen - disables the fullscreen button.
+    * nodownload nofullscreen - disables both download and fullscreen buttons.
+
+9. muted :
+- When this attribute is present, the video will be muted by default.
+
+# Video with multiple sources :
+
+- Just like the <audio> tag, the <video> tag can use the <source> tag to provide alternative file formats to ensure that the video can be played on a wide range of devices and web browsers.
+- For example :
+
+-----------------------------------------------------------------------------------------
+
+<video width="600" height="400" controls>
+    <source src="./Videos/Eternals.2021.1080p.English.Esubs.MoviesVerse.me.mkv" type="video/mkv">
+    <source src="./Videos/hello_video.mp4" type="video/mp4">
+    Sorry, your browser doesn't support embedded videos.
+</video>
+
+------------------------------------------------------------------------------------------
+
