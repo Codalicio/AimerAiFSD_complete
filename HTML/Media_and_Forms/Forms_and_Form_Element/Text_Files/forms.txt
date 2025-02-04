@@ -1,0 +1,226 @@
+--------------------------------------------------------------------------------------------------
+
+# TOPIC - HTML : Getting Started With HTML
+
+--------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------
+
+# Introduction to HTML Form :
+
+- An HTML form is like a virtual questionnaire that you find on websites.
+- It allows you to interact with a website by filling in information and submitting it.
+
+* Brain-storming :
+- Imagine you are signing up for a new website account. The website asks you for your name, phone number, email, and password. You provide this information by typing it into boxes on the website. These boxes are called "input fields". Once you have filled out everything, you click a button that says "Sign Up" or "Submit". When you click that button, the website takes all the information you provided in the input fields and sends it to the website's server, kind of like sending a letter. The server then processes that information and does whatever the website needs it to do, like creating your account with the details you provided.
+
+# Basic form code example :
+
+- To declare a form in HTML, we use the <form> element.
+- Inside the <form> element, we place various form inputs to collect data from users.
+- Here's the basic syntax for declaring a form and placing form elements inside it :
+
+---------------------------------------------------------------------------------------
+
+<h1>Contact Form</h1>
+<!-- HTML <form> element -->
+<form action="/submit_form" method="get">
+    <!-- form element go here -->
+</form>
+
+----------------------------------------------------------------------------------------
+
+# Form attributes :
+
+- Behind the scenes, HTML forms use attributes to control the behavior and how the data is processed.
+Let's understand these attributes one after the other, with examples :
+
+# action :
+- The action attribute is like specifying the address where you want to send your form.
+- It tells the browser where to submit the form data.
+- The action attribute might look like this : action="signup_process". This means the form data will be sent to the "signup_process" URL on some website server.
+- Example :
+
+-----------------------------------------------------------------------
+
+<form action="/signup_process" method="post">
+    <!-- form element go here -->
+    <input type="submit" value="Submit">
+</form>
+
+-----------------------------------------------------------------------
+
+- The above example, will generate a "Submit" button, and as we click on "Submit" button, we will see action URL on browser URL,
+
+----------------------------------------------------------------------
+
+http://127.0.0.1:3000/signup_process
+
+----------------------------------------------------------------------
+
+# method :
+- The method attribute determines how the form data is sent to the server.
+- Example :
+
+----------------------------------------------------------------------
+
+<form method="get"></form>
+<form method="post"></form>
+
+-----------------------------------------------------------------------
+
+- The most common methods are "GET" and "POST".
+- In signUp forms, you can use the method="POST" attribute, which means the data is sent securely and privately.
+
+* Note :
+
+* method="get" :
+- In the case of the GET method, after submitting the form, form data is visible in the address bar.
+- But the POST method prevents form data from appearing in the address bar after the form has been submitted via sending data in the request body.
+- Example :
+
+------------------------------------------------------------------------
+
+<form action="./myData" method="get">
+    <label for="username">Username : </label>
+    <input type="text" name="user" id="username">
+    <label for="email">Email : </label>
+    <input type="email" name="user_email" id="email">
+    <input type="submit" value="Okay">
+</form>
+
+----------------------------------------------------------------------------
+
+- As we click on "Submit" button, you will see action URL on browser URL, you will notice browser URL changes and all form values/data are visible in URL :
+
+----------------------------------------------------------------------------
+
+http://127.0.0.1:3000/HTML/myData?user=Amit+Raj&user_email=rajam
+
+----------------------------------------------------------------------------
+
+* method="post" :
+- In case of method="post", form values will be sent to server as part of body(payload).
+- It can be visualized in the network tab of browser dev tools.
+
+# target :
+- The target attribute accepts different values, each influencing how the form response is handled.
+
+* The target attribute can have one of the following values :
+
+_self :
+- This is the default value if the "target" attribute is not specified.
+- It means that the form response will be displayed in the same window or tab where the form was submitted.
+
+_blank :
+- Using target="_blank", opens the form submission response in a new browser window.
+
+_parent :
+- When using frames or iframes, target="_parent", opens the form submission response in the parent frame.
+
+_top :
+- If the form is within a nested set of frames or iframes, target="_top" cause the form response to open in the top-most-level browsing context, replacing any frames in between. If the form is not within a frame or an iframe, it behaves the same as "_self".
+
+* Syntax :
+
+------------------------------------------------------------
+
+<form target="_self"></form>
+<form target="_blank"></form>
+<form target="_parent"></form>
+<form target="_top"></form>
+
+-------------------------------------------------------------
+
+# autocomplete :
+- Controls whether the browser should remember and autofill form input values.
+- Values can be "on"(default) or "off".
+
+# enctype :
+- Specifies how the form data should be encoded before sending it to the server.
+- There are three common enctype values :
+    1. application/x-www-form-urlencoded : (Default) - It encodes form data in a URL-like format, suitable for regular form submissions with text input fields.
+    2. multipart/form-data : Used for forms with file uploads. It properly handles binary data, like images or documents.
+    3. text/plain : Rarely used, sends form data as plain text without special formatting.
+
+* Syntax :
+
+-----------------------------------------------------------------------------
+
+<form enctype="application/x-www-form-urlencoded"></form>
+<form enctype="multipart/form-data"></form>
+<form enctype="plain/text"></form>
+
+------------------------------------------------------------------------------
+
+- Choose the appropriate enctype based on your form content.
+- For regular forms, you can stick to the default.
+- For file uploads, use multipart/form-data.
+- Example :
+
+--------------------------------------------------------------------------------
+
+<form action="./myData2" method="get" target="_blank" autocomplete="off" enctype="multipart/form-data">
+    <label for="user2">Username : </label>
+    <input type="text" name="guest's_name" id="user2">
+    <label for="email_2">Email : </label>
+    <input type="email" name="guests's_email" id="email_2">
+    <input type="submit" value="Click Me">
+</form>
+
+---------------------------------------------------------------------------------
+
+* Note :
+- Upon submitting the form, you can see enctype as Content-type in Re Headers in Network tab of browser's dev tool.
+
+# name :
+- Name of the form, it must be a unique non-empty string.
+
+* Syntax :
+
+------------------------------------
+
+<form name="signup"></form>
+
+------------------------------------
+
+# novalidate :
+- A boolean attribute, which tells the browser to not validate field values.
+
+* Syntax :
+
+-----------------------------------------
+
+<form novalidate></form>
+
+----------------------------------------
+
+# rel :
+- It defines the relationship between current document and the linked document.
+- Its values could be :
+    * external : Indicates that the referenced document exists outside the scope of the current website.
+    * help : Provides a link to a document designed to offer assistance or guidance.
+    * license : Directs to copyright-related information associated with the document.
+    * next : Refers to the subsequent document within a series or selection.
+    * nofollow : Links to a document without an endorsement, often used for paid links.
+    * noreferrer : Instructs the browser to not send an HTTP referrer header.
+    * noopener : Advises the browser to open the link in a way that prevents the new page from controlling the originating page.
+    * prev : Points to the preceding document in a series or selection.
+    * search : Connects to a search tool designed for exploring the document.
+
+* Example :
+
+-------------------------------------------------------------------
+
+<form action="./myData2" method="get" target="_blank" autocomplete="off" enctype="multipart/form-data" name="user-details" novalidate rel="noreferrer nofollow noopener">
+    <label for="user2">Username : </label>
+    <input type="text" name="guest's_name" id="user2">
+    <label for="email_2">Email : </label>
+    <input type="email" name="guests's_email" id="email_2">
+    <input type="submit" value="Click Me">
+</form>
+
+-------------------------------------------------------------------
+
+- In above example, rel="noreferrer nofollow noopener", protects your site users from potentially malicious external links.
+
+------------------------------------------------------------------------------------------------------
