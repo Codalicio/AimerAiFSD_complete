@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+</head>
+<body>
+    <h1>Contact Form</h1>
+    <!-- HTML <form> element -->
+    <form action="/signup_process" method="post">
+        <!-- form element goes here -->
+         <input type="submit" value="Submit">
+    </form>
+    <hr>
+    <!-- form attributes -->
+    <form action="./myData" method="get">
+        <label for="username">Username : </label>
+        <input type="text" name="user" id="username">
+        <label for="email">Email : </label>
+        <input type="email" name="user_email" id="email">
+        <input type="submit" value="Okay">
+    </form>
+    <hr>
+    <!-- form attributes -->
+    <form action="./myData1" method="post">
+        <label for="user1">Username : </label>
+        <input type="text" name="user's_name" id="user1">
+        <label for="email_1">Email : </label>
+        <input type="email" name="user's_email" id="email_1">
+        <input type="submit" value="Submit">
+    </form>
+    <hr>
+    <!-- form attributes -->
+    <form action="./myData2" method="get" target="_blank" autocomplete="off" enctype="multipart/form-data" name="user-details" novalidate rel="noreferrer nofollow noopener">
+        <label for="user2">Username : </label>
+        <input type="text" name="guest's_name" id="user2">
+        <label for="email_2">Email : </label>
+        <input type="email" name="guests's_email" id="email_2">
+        <input type="submit" value="Click Me">
+    </form>
+</body>
+</html>
