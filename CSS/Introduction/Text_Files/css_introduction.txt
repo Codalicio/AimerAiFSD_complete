@@ -4,3 +4,44 @@
 
 -------------------------------------------------------------------------------------------
 
+# Introduction To CSS :
+
+Question) - What is CSS?
+Answer) - 
+- CSS (Cascading Style Sheets) is a language used to style and format web pages.
+- It controls how HTML elements (like text, images, and buttons) look on a website.
+
+Question) - Why use CSS?
+Answer) - 
+- CSS is used to make websites look visually appealing and organized.
+- It separates the content (HTML) from the design, making it easier to maintain and update the look of a website without changing the core content.
+
+Question) - What can CSS do?
+Answer) -
+- Change appearance : CSS can control colors, fonts, and the layout of a page.
+- Create layouts : It helps design the structure of a webpage, like where to place headers, footers, sidebars, etc.
+- Add effects : CSS can create animations, transitions, and hover effects to make a website interactive.
+- Responsive design : CSS can make websites look good on different devices, like phones, tablets, and desktops.
+
+# CSS Versions :
+
+- Cascading Style Sheets (CSS) is an older technology used for designing websites.
+- Over time, it has gone through different versions, each bringing new features and improvements for web designers and developers.
+
+* CSS1 (1996) :
+- The first version of CSS introduced basic styling features like text formatting, lists, margins, borders, color, and backgrounds.
+- It worked in most browsers, but older browsers had some issues with lesser-used features like spacing and display settings.
+
+* CSS2 :
+- This version focused on layout positioning and media types, such as styles for printing.
+- However, certain features like aural style sheets (for sound) were never widely adopted and were eventually removed.
+
+* CSS2.1 (2004) :
+- This was an update to CSS2 that fixed issues and clarified rules but didn't bring any big new changes.
+
+* CSS3 :
+- Unlike earlier versions, CSS3 is a collection of smaller modules released independently.
+- It introduced powerful new features like advanced selectors(for targeting elements), gradients(for color transitions), shadows, animations, transitions, and much more.
+- Modules include Selectors, Box Model, Backgrounds, Borders, Text Effects, and Transforms.
+
+
