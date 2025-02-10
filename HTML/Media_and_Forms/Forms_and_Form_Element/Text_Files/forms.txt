@@ -224,3 +224,343 @@ _top :
 - In above example, rel="noreferrer nofollow noopener", protects your site users from potentially malicious external links.
 
 ------------------------------------------------------------------------------------------------------
+
+# Form Elements :
+
+- Form elements in HTML are used to create interactive sections where users can input data or make selections.
+- Forms are a fundamental part of web development, allowing users to submit information to a server for processing.
+
+# Here are some elements that form contains :
+
+1. <input> and <label> tag :
+
+* <input> tag :
+- The <input> HTML element is one of the most important form elements which is used to accept data/input from the user.
+- A wide variety of types of input data and control widgets are available.
+- A simple example :
+
+--------------------------------------------------------------
+
+<form action="./sampleuserData" target="_blank" method="get" novalidate rel="nofollow noopener noreferrer" name="userInfoForm" autocomplete="off" enctype="multipart/form-data">
+    <label for="email">Enter Your Email : </label>
+    <input type="email" name="user's-email" id="email">
+</form>
+
+--------------------------------------------------------------
+
+- The above code defines an email input for entering email address.
+- It also checks for a valid email address.
+
+* <label> tag :
+- <label> tag help users to know the purpose of the form control element(input), and for attributes specifies the target control element, which allows users to click on the label to focus on the associated form control.
+
+2. <fieldset> and <legend> tags :
+
+* <fieldset> tag :
+- The <fieldset> tag is used to group related form elements together.
+- It will give a border to the grouped elements.
+
+* <legend> tag :
+- THe <legend> tag is used within a <fieldset> to provide a caption or title for the fieldset.
+- It is often used to group related form controls together and provide context or instructions for the user.
+- The text within the <legend> tag is typically styled to stand out from the rest of the form controls, making it easier for the user to identify the purpose of the group of controls.
+- Let's take the form submission example, instead of <h1> add <fieldset> and <legend> :
+
+3. <button> tag :
+- It offers submitting a form or triggering specific actions, like resetting the form fields.
+
+* Syntax :
+
+----------------------------------------------
+
+<button type="">Button Text</button>
+
+----------------------------------------------
+
+# Here, type attribute can be either submit, reset, or button, depending on use cases :
+* submit - When this value is used, the button initiates the submission of form data to the server.
+* reset - Selecting this value causes the button to reset all associated input fields to their original values.
+* button - Opting for this value means, button will not have predefined behaviors, like reset or submit.
+
+* Example - Reset form : 
+
+-----------------------------------------------------------------------------
+
+<fieldset>
+    <legend>SignUp Form</legend>
+    <form action="./userDataInfo" target="_blank" method="get" novalidate rel="nofollownoopenernoreferrer" name="userInfos" autocomplete="off" enctype="multipart/form-data">
+        <label for="userName">Enter Username : </label>
+        <br>
+        <input type="text" name="nameOfTheUser" id="userName" required>
+        <br>
+        <br>
+        <label for="emailId">Enter Email Address : </label>
+        <br>
+        <input type="email" name="emailOfTheUser" id="emsilId" required>
+        <br>
+        <br>
+        <label for="userpassword">Enter Password : </label>
+        <br>
+        <input type="password" name="passwordOfTheUser" id="userpassword" required>
+        <br>
+        <br>
+        <label for="confirmPassword">Confirm Password : </label>
+        <br>
+        <input type="password" name="passwordConfirmation" id="confirmPassword" required>
+        <br>
+        <br>
+        <button disabled>Normal Button</button>
+        <br>
+        <br>
+        <button type="reset">Reset</button>
+        <br>
+        <br>
+        <input type="submit" value="Sign Up">
+    </form>
+</fieldset>
+
+---------------------------------------------------------------------------------
+
+- In the example above, clicking the button with type="reset", sets all fields to its original value.
+
+4. <datalist> tag :
+- The <datalist> tag is used to provide an autocomplete feature for <input> elements.
+- Users will see a drop-down list of predefined options as they input data.
+- The <datalist> element's id attribute must be equal to the <input> element's list attribute(this binds them together).
+- Example :
+
+--------------------------------------------------------------------------------
+
+<label for="favMentor">Favorite Mentor : </label>
+<input list="mentorList" name="mentor" id="favMentor">
+<datalist id="mentorList">
+    <option value="Vishwa Mohan"></option>
+    <option value="Mithun S"></option>
+</datalist>
+
+----------------------------------------------------------------------------------
+
+5. Textarea Tag :
+- The <textarea> element is used to create a multi-line text input field that allows users to enter and edit text.
+- The <textarea> element can be useful when you want users to provide longer comments, descriptions, or other types of textual input.
+- Example :
+
+---------------------------------------------------------------------------------
+
+<label for="review">Write your review here : </label>
+<textarea name="userReview" id="review" cols="10" rows="10"></textarea>
+
+---------------------------------------------------------------------------------
+
+6. Details Tag :
+- The <details> HTML element generates a disclosure widget that displays information only when the widget is switched to the open state.
+- Example :
+
+--------------------------------------------------------------------------
+
+<details>
+    <summary>Topic name</summary>
+    Topic details goes here..............
+</details>
+
+--------------------------------------------------------------------------
+
+7. Select and Option :
+- In HTML, the <select> element is used to create a dropdown list, and the <option> element is used to define the individual options within that dropdown list. This allows users to select one option from a dropdown of multiple options.
+- Let's understand with an example of dropdown :
+
+--------------------------------------------------------------------------
+
+<label for="drop-down">Select the one : </label>
+<select name="dropdown" id="drop-down">
+    <option value="web development">Web development</option>
+    <option value="data science">Data science</option>
+    <option value="java full stack">Java Full Stack Development</option>
+    <option value="data analytics">Data analytics</option>
+</select>
+
+-----------------------------------------------------------------------------
+
+- In the above example, it allows users to select one option from the dropdown options.
+
+
+# Input Tag :
+
+- The <input> HTML element is one of the most important form elements which is used to accept data/input from the user.
+- A wide variety of types of input data and control widgets are available.
+
+* type="email" :
+
+- Example :
+
+------------------------------------------------------------------------------
+
+<label for="email">Enter Email : </label>
+<input type="email" name="userEmail" id="email" required />
+
+------------------------------------------------------------------------------
+
+- The above code defines an email input for entering an email address. It also checks for a valid email address.
+- Here, <label> tag help users to know the purpose of the form control element(input), and for attribute specifies the target control element, which allows users to click on the label to focus on the associated form control.
+
+# Input Attributes :
+
+* type :
+- This attribute specifies the type of input control to be created.
+- It is a required attribute and can take various values such as text, password, email, number, checkbox, radio, submit, and many more.
+
+* name :
+- It's used to give a name to the information that a user enters into that field.
+- This name is important because it helps developers and servers understand what the user has typed in.
+- When you submit the form, the value of this attribute is sent to the server. The server uses these names to figure out which data corresponds to which input field. It's like labelling different jars in your kitchen so you can easily find what you need.
+- Let's look at an example to understand the significance of name attribute :
+
+--------------------------------------------------------------------------------
+
+<form action="./sampleuserData" target="_blank" method="get" novalidate rel="nofollow noopener noreferrer" name="userInfoForm" autocomplete="off" enctype="multipart/form-data">
+    <label for="email">Enter Your Email : </label>
+    <input type="email" name="user's-email" id="email">
+    <input type="submit" value="submit form">
+</form>
+
+---------------------------------------------------------------------------------
+
+* value :
+- This attribute specifies the default value of the input control.
+- It is used to pre-fill the input field with a value that the user can modify.
+
+* placeholder :
+- This attribute specifies a short hint or example text that is displayed in the input field to provide guidance to the user on what should be entered.
+
+* step :
+- The step attribute is used with the <input> element of type number or datetime-local to specify the increment value for the input field.
+- It defines how much the value of the input should increase or decrease.
+- When the user interacts with the associated input control, such as clicking the up/down arrows or using keyboard input.
+- step attribute works with the number, range, date, datetime-local, month, time and week input types.
+
+- Example :
+
+-------------------------------------------------------------------
+
+<form action="/input/attributes">
+    <label for="quantity">Only in dozens(multiples of 12) : </label>
+    <input type="number" name="quantitySelectedByTheUser" id="quantity" step="12" placeholder="Entera number or use arrows">
+</form>
+
+--------------------------------------------------------------------
+
+Brain-storming :
+- The above example shows that, suppose you are creating an online-store selling some items online and it comes in a pack of 12, so then you can use this step attribute and add the step value as 12 so that the user can enter only multiple of 12 as the input.
+
+* autocomplete :
+- The autocomplete attribute is used in HTML forms to control whether a browser should automatically complete input fields.
+- THe browser should display options to fill in the field, based on earlier typed values.
+- This attribute can be applied to <input> elements of type text or number, <textarea> elements, <select> elements, and <form> elements.
+- By default, the value is "on".
+- We can turn the autocomplete suggestions on a form by keeping the value as "on", i.e., autocomplete="on".
+
+- Example :
+
+-------------------------------------------------------------------------
+
+<form action="/input/attributes" autocomplete="on" method="get">
+    <label for="quantity">Only in dozens(multiples of 12) : </label>
+    <input type="number" name="quantitySelectedByTheUser" id="quantity" step="12" placeholder="Enter a number or use arrows" autocomplete="on">
+    <label for="email">Email : </label>
+    <input type="email" name="userEmail" id="email" autocomplete="off" placeholder="Enter your email">
+    <label for="username">Username : </label>
+    <input type="text" name="userIdentity" id="username" placeholder="Enter your name" autocomplete="on">
+    <input type="submit" value="ok">
+</form>
+
+--------------------------------------------------------------------------
+
+# Boolean Attribute :
+
+- A Boolean Attribute means that the presence of that attribute on an element represents the 'true' value, and the absence of the attribute represents the 'false' value.
+- These Boolean attributes are an essential part of HTML and are used to control the behavior and properties of various elements without requiring additional attribute values.
+- Their presence or absence determines whether a particular behavior or state is enabled or disabled, providing flexibility and simplicity in HTML markup.
+
+# The design principle of boolean attributes  serves two primary purposes :
+
+1. Simplicity :
+- Boolean attributes make the HTML markup more concise and readable.
+- They eliminate the need for explicit values, reducing clutter in the code and making it easier for developers to understand and maintain.
+
+2. Clarity :
+- Boolean attributes enhance the clarity of HTML documents by clearly indicating the state of an element or its associated behavior.
+- Their presence provide a straightforward visual clue that a particular feature is active, while their absence communicates the opposite.
+
+* autofocus :
+- The autofocus attribute is an HTML attribute that can be applied to specify that the input field should receive focus automatically when the web page loads.
+- This means that as soon as the page is loaded, the cursor will be placed inside the input field, allowing the user to start tying or interacting with it without needing to click on it first.
+- Example :
+
+-----------------------------------------------------------------------------
+
+<label for="username">Username : </label>
+<input type="text" autofocus name="userIdentity" id="username" placeholder="Enter your name" autocomplete="on">
+
+-----------------------------------------------------------------------------
+
+* multiple :
+- The multiple attribute is used with the <input> element, when creating file upload fields <input type="file" /> to allow users to select multiple files for upload in a single input field.
+- This attribute is particularly useful when you want to enable users to upload multiple files simultaneously.
+- multiple also works with <input> elements of type email to allow users to interact multiple email addresses in a single input field.
+- When the multiple attribute is applied to an email input field, it transforms the field into a "multiple email" input, enabling users to enter a list of email addresses separated by commas or semicolons.
+
+* readonly :
+- The readonly attribute is used with form elements in HTML to make an input or textarea non-editable by the user.
+- When you apply the readonly attribute to an input element or textarea, it prevents the user from modifying the content of that field.
+- However, the user can still view the content, highlight it, and copy the text from it and interact with other elements on the page.
+- Example :
+
+---------------------------------------------------------------------------------------
+
+<form action="/input/attributes" autocomplete="on" method="get">
+    <input type="text" id="readonly-input" name="ReadOnlyInput" readonly value="3456782526"/>
+</form>
+
+--------------------------------------------------------------------------------------
+
+- In the above example, the value in the input field cannot be edited by the user.
+
+* disabled :
+- The disabled attribute in the HTML used to disable user interaction with an HTML element, such as <input> field, a <button>, or a <select> element, etc...
+- When the disabled attribute is applied to an element, it prevents the user form interacting with that element.
+- If you add the disabled attribute to an <input> field within an HTML form, the field will not be included in the form submission.
+- In other words, the data entered into a disabled input field will not be sent to the backend/server when the form is submitted.
+- Example :
+
+-----------------------------------------------------------------------------------
+
+<form action="/input/attributes" autocomplete="on" method="get">
+    <label for="username">Username : </label>
+    <input type="text" autofocus name="userIdentity" id="username" placeholder="Enter your name" autocomplete="on" disabled>
+</form>
+
+-----------------------------------------------------------------------------------
+
+* novalidate :
+- The novalidate attribute is used in HTML to disable the built-in form validation provided by web browsers.
+- When this attribute is added to a <form> element, it instructs the browser not to its default client-side validation checks when the form is submitted.
+- For example, if you have an input field for email and you have added the type email. If you type some random text on that input field and try to submit, generally what happens is that it will throw us a warning and won't submit that form to the backend/server.
+But when you add the novalidate attribute on to the form, it won't validate anything, rather it just submit/sends the data to the backend/server.
+- Example :
+
+-----------------------------------------------------------------------------------
+
+<form action="/input/attributes" autocomplete="on" method="get" novalidate>
+    <label for="quantity">Only in dozens(multiples of 12) : </label>
+    <input type="number" name="quantitySelectedByTheUser" id="quantity" step="12" placeholder="Enter a number or use arrows"autocomplete="on">
+    <label for="email">Email : </label>
+    <input type="email" name="userEmail" id="email" autocomplete="off" placeholder="Enter your email">
+    <label for="username">Username : </label>
+    <input type="text" autofocus name="userIdentity" id="username" placeholder="Enter your name" autocomplete="on" disabled>
+    <label for="readonly-input">Readonly Order-ID</label>
+    <input type="text" id="readonly-input" name="ReadOnlyInput" readonly value="3456782526">
+    <input type="submit" value="ok">
+</form>
+
+------------------------------------------------------------------------------------
+
