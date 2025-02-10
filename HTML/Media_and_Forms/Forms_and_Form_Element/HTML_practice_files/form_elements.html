@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML form Elements</title>
+</head>
+<body>
+    <form action="./sampleuserData" target="_blank" method="get" novalidate rel="nofollow noopener noreferrer" name="userInfoForm" autocomplete="off" enctype="multipart/form-data">
+        <label for="email">Enter Your Email : </label>
+        <input type="email" name="user's-email" id="email">
+        <input type="submit" value="submit form">
+    </form>
+    <hr>
+    <!-- <fieldset> and <legend> tag -->
+    <fieldset>
+        <legend>SignUp Form</legend>
+        <form action="./userDataInfo" target="_blank" method="get" novalidate rel="nofollow noopener noreferrer" name="userInfos" autocomplete="off" enctype="multipart/form-data">
+            <label for="userName">Enter Username : </label>
+            <br>
+            <input type="text" name="nameOfTheUser" id="userName" required>
+            <br>
+            <br>
+            <label for="emailId">Enter Email Address : </label>
+            <br>
+            <input type="email" name="emailOfTheUser" id="emsilId" required>
+            <br>
+            <br>
+            <label for="userpassword">Enter Password : </label>
+            <br>
+            <input type="password" name="passwordOfTheUser" id="userpassword" required>
+            <br>
+            <br>
+            <label for="confirmPassword">Confirm Password : </label>
+            <br>
+            <input type="password" name="passwordConfirmation" id="confirmPassword" required>
+            <br>
+            <br>
+            <input type="submit" value="Sign Up">
+        </form>
+    </fieldset>
+    <hr>
+    <!-- form with <button> tag and type attribute with different values -->
+    <fieldset>
+        <legend>SignUp Form</legend>
+        <form action="./userDataInfo" target="_blank" method="get" novalidate rel="nofollow noopenernoreferrer" name="userInfos" autocomplete="off" enctype="multipart/form-data">
+            <label for="userName">Enter Username : </label>
+            <br>
+            <input type="text" name="nameOfTheUser" id="userName" required>
+            <br>
+            <br>
+            <label for="emailId">Enter Email Address : </label>
+            <br>
+            <input type="email" name="emailOfTheUser" id="emsilId" required>
+            <br>
+            <br>
+            <label for="userpassword">Enter Password : </label>
+            <br>
+            <input type="password" name="passwordOfTheUser" id="userpassword" required>
+            <br>
+            <br>
+            <label for="confirmPassword">Confirm Password : </label>
+            <br>
+            <input type="password" name="passwordConfirmation" id="confirmPassword" required>
+            <br>
+            <br>
+            <!-- <datalist> element -->
+            <h2>The datalist element</h2>
+            <label for="language">Choose your most preferred language : </label>
+            <br>
+            <br>
+            <input list="languages" name="languageSelected" id="language">
+            <datalist id="languages">
+                <option value="java"></option>
+                <option value="c++"></option>
+                <option value="scala"></option>
+                <option value="rust"></option>
+                <option value="javascript"></option>
+                <option value="go"></option>
+            </datalist>
+            <br>
+            <br>
+            <label for="favMentor">Favorite Mentor : </label>
+            <input list="mentorList" name="mentor" id="favMentor">
+            <datalist id="mentorList">
+                <option value="Vishwa Mohan"></option>
+                <option value="Mithun S"></option>
+            </datalist>
+            <br>
+            <br>
+            <!-- <textarea> element -->
+            <label for="review">Write your review here : </label>
+            <textarea name="userReview" id="review" cols="10" rows="10"></textarea>
+            <br>
+            <br>
+            <!-- <details> element -->
+            <details>
+                <summary>Topic name</summary>
+                Topic details goes here..............
+            </details>
+            <br>
+            <br>
+            <label for="drop-down">Select the one : </label>
+            <select name="dropdown" id="drop-down">
+                <option value="web development">Web development</option>
+                <option value="data science">Data science</option>
+                <option value="java full stack">Java Full Stack Development</option>
+                <option value="data analytics">Data analytics</option>
+            </select>
+            <br>
+            <br>
+            <button disabled>Normal Button</button>
+            <br>
+            <br>
+            <button type="reset">Reset</button>
+            <br>
+            <br>
+            <input type="submit" value="Sign Up">
+        </form>
+    </fieldset>
+</body>
+</html>

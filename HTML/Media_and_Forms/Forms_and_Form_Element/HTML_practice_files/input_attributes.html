@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Tag And Its Attributes</title>
+</head>
+<body>
+    <form action="/input/attributes" autocomplete="on" method="get" novalidate>
+        <label for="quantity">Only in dozens(multiples of 12) : </label>
+        <input type="number" name="quantitySelectedByTheUser" id="quantity" step="12" placeholder="Enter a number or use arrows" autocomplete="on">
+        <label for="email">Email : </label>
+        <input type="email" name="userEmail" id="email" autocomplete="off" placeholder="Enter your email">
+        <label for="username">Username : </label>
+        <input type="text" autofocus name="userIdentity" id="username" placeholder="Enter your name" autocomplete="on" disabled>
+        <label for="readonly-input">Readonly Order-ID</label>
+        <input type="text" id="readonly-input" name="ReadOnlyInput" readonly value="3456782526">
+        <input type="submit" value="ok">
+    </form>
+</body>
+</html>
