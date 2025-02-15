@@ -564,3 +564,5 @@ But when you add the novalidate attribute on to the form, it won't validate anyt
 
 ------------------------------------------------------------------------------------
 
+# Common Input Attributes :
+
