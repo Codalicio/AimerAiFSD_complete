@@ -562,7 +562,4 @@ But when you add the novalidate attribute on to the form, it won't validate anyt
     <input type="submit" value="ok">
 </form>
 
-------------------------------------------------------------------------------------
-
-# Common Input Attributes :
-
+-----------------------------------------------------------------------------------
