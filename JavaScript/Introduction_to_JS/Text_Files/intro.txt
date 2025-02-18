@@ -1,0 +1,24 @@
+------------------------------------------------------------------------------------------------
+
+# TOPIC - INTRODUCTION TO JAVASCRIPT
+
+------------------------------------------------------------------------------------------------
+
+# Introduction :
+
+- Browsers have run-time environment which helps browsers to understand and execute the code.
+- We have javascript run-time environment to run nad execute javascript inside the browser, such V8 Engine used by Google Chrome.
+- Node.js provides run-time environment on our local machine as well, thus someone who knew frontend can work on the backend also, using the same language (javascript).
+
+# History of JavaScript :
+
+- After its release, javascript was named as Mocha, then LiveScript and now it is known as JavaScript.
+
+# Features of JavaScript :
+
+- Ease of use
+- Cross-platform compatibility
+- A large developer community
+- Powerful community
+- Growing demand
+
