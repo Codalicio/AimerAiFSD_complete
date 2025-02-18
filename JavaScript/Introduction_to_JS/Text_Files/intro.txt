@@ -6,6 +6,7 @@
 
 # Introduction :
 
+- JavaScript s a popular programming language that is widely used to build
 - Browsers have run-time environment which helps browsers to understand and execute the code.
 - We have javascript run-time environment to run nad execute javascript inside the browser, such V8 Engine used by Google Chrome.
 - Node.js provides run-time environment on our local machine as well, thus someone who knew frontend can work on the backend also, using the same language (javascript).
@@ -21,4 +22,16 @@
 - A large developer community
 - Powerful community
 - Growing demand
+
+# Applications Of JavaScript :
+
+* Web Development
+* Web Applications
+* Server-side Development
+* Mobile App Development
+* Game Development
+* Browser Extensions
+* Data Visualization
+* Real-time Applications
+* Automation
 
